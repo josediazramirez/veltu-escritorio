@@ -1,0 +1,181 @@
+﻿<Page x:Class="ErpClass.Pagepedido"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ErpClass"
+      mc:Ignorable="d" Width="auto" Height="auto"
+      FontFamily="Roboto Medium">
+    <Grid x:Name="grid_venta">
+        <Grid x:Name="grid_pedido">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            
+            <Button  x:Name="btn_update_aten" Margin="5" Height="50" Width="50" HorizontalAlignment="Right" Click="btn_update_aten_Click">
+                <Image Source="/Recursos/buscar.png"  Width="15" />
+
+            </Button>
+            <DataGrid x:Name="grilla_pedido" 
+                      Visibility="Collapsed"
+                      AutoGenerateColumns="False" 
+                      SelectionMode="Single" 
+                      IsReadOnly="True" 
+                      Grid.Column="0"
+                      Grid.Row="1" 
+                      Margin="5"
+                      FontWeight="Bold"
+                      FontSize="15">
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Background="Transparent" 
+                                        BorderBrush="#FF5733"
+                                        BorderThickness="2"
+                                        Margin="0" 
+                                        Width="60"
+                                        Padding="10,0,10,0"
+                                        Click="btn_cancelar_atencion_Click"
+                                       >
+                                    <Button.Resources>
+                                        <Style TargetType="Button">
+                                            <Setter Property="Content" Value="X" ></Setter>
+                                            <Setter Property="FontSize" Value="20"></Setter>
+                                            <Setter Property="FontWeight" Value="Bold"></Setter>
+                                            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+                                            <Setter Property="Margin" Value="0"></Setter>
+                                        </Style>
+                                    </Button.Resources>
+                                </Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn   Binding="{Binding num_atencion}" Header="N°" Width="60">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="FontSize" Value="18"></Setter>
+                                <Setter Property="FontWeight" Value="Bold"></Setter>
+                                <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Background="Transparent" 
+                                        BorderBrush="#3498DB"
+                                        BorderThickness="2"
+                                        Margin="2" 
+                                        Padding="20,0,20,0"
+                                        Click="Button_atencion_Click"
+                                       >
+                                    <Button.Resources>
+                                        <Style TargetType="Button">
+                                            <Setter Property="Content" Value="{Binding tip_atencion}" ></Setter>
+                                            <Setter Property="FontSize" Value="20"></Setter>
+                                            <Setter Property="FontWeight" Value="Bold"></Setter>
+                                            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+                                            <Setter Property="Margin" Value="2"></Setter>
+                                        </Style>
+                                    </Button.Resources>
+                                </Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <Frame Grid.Column="1"
+                   Background="#34495E"
+                   Margin="5">
+            </Frame>
+
+            <Label x:Name="lb_num_pedido" 
+                   Margin="5"
+                   Content="N° ATENCIÓN " 
+                   HorizontalAlignment="Left"
+                   FontSize="30"
+                   FontWeight="Bold"
+                   Foreground="White"
+                   Grid.Column="1"/>
+
+
+            <DataGrid x:Name="dgi_detalles"  Visibility="Collapsed"
+                      MinHeight="500"
+                      MaxHeight="500"
+                      AutoGenerateColumns="False" 
+                      SelectionMode="Single" 
+                      IsReadOnly="True" 
+                      FontWeight="Bold" 
+                      RowDetailsVisibilityMode="Visible" 
+                      Grid.Column="1"
+                      Grid.Row="1"
+                      Margin="5"
+                      FontSize="16">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding numero}" Visibility="Hidden"/>
+                    <DataGridTextColumn Header="SKU" Binding="{Binding codigo}"/>
+
+                    <DataGridTextColumn Header="Producto"  Binding="{Binding producto}" Width="650"/>
+                    <DataGridTextColumn Header="Precio"  Binding="{Binding precio, StringFormat={}$ {0:N0}}"  Width="100" >
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="HorizontalAlignment" Value="Right" />
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Descuento" Binding="{Binding precio_desc, StringFormat={}$ {0:N0}}"  Width="120" >
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="HorizontalAlignment" Value="Right" />
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="CANT." Binding="{Binding cantidad_formato}" Width="80">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="HorizontalAlignment" Value="Right" />
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Total" Binding="{Binding total , StringFormat={}$ {0:N0}}" Width="80"  >
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="HorizontalAlignment" Value="Right" />
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Frame
+                Grid.Column="1"
+                Grid.Row="2"
+                Background="#34495E"
+                ></Frame>
+
+            <StackPanel
+                    Grid.Column="1"
+                    Grid.Row="2"            
+                    Margin="10,10,100,10"
+                HorizontalAlignment="Left"
+                >
+                <Label x:Name="lbl_total" Content="TOTAL $" Visibility="Collapsed"
+                       FontSize="35"
+                       Foreground="White"
+                       FontWeight="Bold">
+                </Label>
+                <Button x:Name="btn_venta" 
+                    FontSize="25"
+                    Content="Realizar venta" 
+                    Click="btn_venta_Click" Visibility="Collapsed"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

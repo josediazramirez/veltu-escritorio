@@ -1,0 +1,47 @@
+﻿<Controls:MetroWindow x:Class="ErpClass.ModalAperturaCierre"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:ErpClass"
+        mc:Ignorable="d" 
+                      Height="300"
+                      Width="600"
+                      WindowStartupLocation="CenterScreen"
+                      WindowStyle="None"
+                      ResizeMode="NoResize"
+                      ShowTitleBar="False">
+    <Grid Background="#E9E9E9">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="AUTO"></RowDefinition>
+            <RowDefinition Height="AUTO"></RowDefinition>
+            <RowDefinition Height="AUTO"></RowDefinition>
+            <RowDefinition Height="AUTO"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Background="#34495E" Margin="0,10,0,10">
+            <Label Content="EFECTIVO EN GAVETA" Foreground="White" FontSize="30" FontWeight="Bold"></Label>
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="300"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Content="TOTAL" FontSize="20" FontWeight="Bold"></Label>
+
+            <Label Grid.Row="0" Grid.Column="1" Content="CANTIDAD" FontSize="20" FontWeight="Bold"></Label>
+            <TextBox x:Name="txt_20000" PreviewTextInput="NumberValidationTextBox" KeyUp="txt_20000_KeyUp" Grid.Column="1" Grid.Row="1" FontSize="24" FontWeight="Bold"></TextBox>
+
+        </Grid>
+        <StackPanel Grid.Row="2" Background="#34495E" Margin="0,10,0,10">
+            <Label x:Name="lb_total" HorizontalAlignment="Right" Content="TOTAL" FontSize="30" FontWeight="Bold" Foreground="White"></Label>
+        </StackPanel>
+        <StackPanel Grid.Row="3"  Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="btn_cancelar" Click="btn_cancelar_Click" Content="CANCELAR" FontSize="30" Margin="5"></Button>
+            <Button  x:Name="btn_aceptar" Click="btn_aceptar_Click" Content="ACEPTAR" FontSize="30" Margin="5"></Button>
+        </StackPanel>
+    </Grid>
+</Controls:MetroWindow>

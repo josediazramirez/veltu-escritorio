@@ -1,0 +1,183 @@
+D:\DE TODO\proyectos web\Pizzeria\Model\bin\Release\Model.dll.config
+D:\DE TODO\proyectos web\Pizzeria\Model\bin\Release\Model.dll
+D:\DE TODO\proyectos web\Pizzeria\Model\bin\Release\Model.pdb
+D:\DE TODO\proyectos web\Pizzeria\Model\bin\Release\BouncyCastle.Crypto.dll
+D:\DE TODO\proyectos web\Pizzeria\Model\bin\Release\EntityFramework.dll
+D:\DE TODO\proyectos web\Pizzeria\Model\bin\Release\EntityFramework.SqlServer.dll
+D:\DE TODO\proyectos web\Pizzeria\Model\bin\Release\Google.Protobuf.dll
+D:\DE TODO\proyectos web\Pizzeria\Model\bin\Release\K4os.Compression.LZ4.dll
+D:\DE TODO\proyectos web\Pizzeria\Model\bin\Release\K4os.Compression.LZ4.Streams.dll
+D:\DE TODO\proyectos web\Pizzeria\Model\bin\Release\K4os.Hash.xxHash.dll
+D:\DE TODO\proyectos web\Pizzeria\Model\bin\Release\MySql.Data.dll
+D:\DE TODO\proyectos web\Pizzeria\Model\bin\Release\MySql.Data.Entity.EF6.dll
+D:\DE TODO\proyectos web\Pizzeria\Model\bin\Release\System.Buffers.dll
+D:\DE TODO\proyectos web\Pizzeria\Model\bin\Release\System.Memory.dll
+D:\DE TODO\proyectos web\Pizzeria\Model\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+D:\DE TODO\proyectos web\Pizzeria\Model\bin\Release\EntityFramework.xml
+D:\DE TODO\proyectos web\Pizzeria\Model\bin\Release\EntityFramework.SqlServer.xml
+D:\DE TODO\proyectos web\Pizzeria\Model\bin\Release\Google.Protobuf.pdb
+D:\DE TODO\proyectos web\Pizzeria\Model\bin\Release\Google.Protobuf.xml
+D:\DE TODO\proyectos web\Pizzeria\Model\bin\Release\K4os.Compression.LZ4.xml
+D:\DE TODO\proyectos web\Pizzeria\Model\bin\Release\K4os.Compression.LZ4.Streams.xml
+D:\DE TODO\proyectos web\Pizzeria\Model\bin\Release\K4os.Hash.xxHash.xml
+D:\DE TODO\proyectos web\Pizzeria\Model\bin\Release\System.Buffers.xml
+D:\DE TODO\proyectos web\Pizzeria\Model\bin\Release\System.Memory.xml
+D:\DE TODO\proyectos web\Pizzeria\Model\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+D:\DE TODO\proyectos web\Pizzeria\Model\obj\Release\Model.csproj.CoreCompileInputs.cache
+D:\DE TODO\proyectos web\Pizzeria\Model\obj\Release\Model.csproj.CopyComplete
+D:\DE TODO\proyectos web\Pizzeria\Model\obj\Release\Model.dll
+D:\DE TODO\proyectos web\Pizzeria\Model\obj\Release\Model.pdb
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\bin\Release\Model.dll.config
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\bin\Release\Model.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\bin\Release\Model.pdb
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\bin\Release\BouncyCastle.Crypto.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\bin\Release\EntityFramework.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\bin\Release\Google.Protobuf.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\bin\Release\K4os.Compression.LZ4.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\bin\Release\K4os.Compression.LZ4.Streams.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\bin\Release\K4os.Hash.xxHash.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\bin\Release\MySql.Data.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\bin\Release\MySql.Data.Entity.EF6.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\bin\Release\System.Buffers.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\bin\Release\System.Memory.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\bin\Release\EntityFramework.xml
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\bin\Release\Google.Protobuf.pdb
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\bin\Release\Google.Protobuf.xml
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\bin\Release\K4os.Compression.LZ4.xml
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\bin\Release\K4os.Compression.LZ4.Streams.xml
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\bin\Release\K4os.Hash.xxHash.xml
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\bin\Release\System.Buffers.xml
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\bin\Release\System.Memory.xml
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\obj\Release\Model.csproj.CoreCompileInputs.cache
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\obj\Release\Model.csproj.CopyComplete
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\obj\Release\Model.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\obj\Release\Model.pdb
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\obj\Release\Model.Migrations.InitialMigration.resources
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\obj\Release\Model.csproj.GenerateResource.cache
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\Model\obj\Release\Model.csprojAssemblyReference.cache
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\bin\Release\Model.dll.config
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\bin\Release\Model.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\bin\Release\Model.pdb
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\bin\Release\BouncyCastle.Crypto.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\bin\Release\EntityFramework.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\bin\Release\Google.Protobuf.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\bin\Release\K4os.Compression.LZ4.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\bin\Release\K4os.Compression.LZ4.Streams.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\bin\Release\K4os.Hash.xxHash.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\bin\Release\MySql.Data.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\bin\Release\MySql.Data.Entity.EF6.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\bin\Release\System.Buffers.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\bin\Release\System.Memory.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\bin\Release\EntityFramework.xml
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\bin\Release\Google.Protobuf.pdb
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\bin\Release\Google.Protobuf.xml
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\bin\Release\K4os.Compression.LZ4.xml
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\bin\Release\K4os.Compression.LZ4.Streams.xml
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\bin\Release\K4os.Hash.xxHash.xml
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\bin\Release\System.Buffers.xml
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\bin\Release\System.Memory.xml
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\obj\Release\Model.csprojAssemblyReference.cache
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\obj\Release\Model.Migrations.InitialMigration.resources
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\obj\Release\Model.csproj.GenerateResource.cache
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\obj\Release\Model.csproj.CoreCompileInputs.cache
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\obj\Release\Model.csproj.CopyComplete
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\obj\Release\Model.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\Model\obj\Release\Model.pdb
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\bin\Release\Model.dll.config
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\bin\Release\Model.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\bin\Release\Model.pdb
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\bin\Release\BouncyCastle.Crypto.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\bin\Release\EntityFramework.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\bin\Release\Google.Protobuf.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\bin\Release\K4os.Compression.LZ4.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\bin\Release\K4os.Compression.LZ4.Streams.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\bin\Release\K4os.Hash.xxHash.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\bin\Release\MySql.Data.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\bin\Release\MySql.Data.Entity.EF6.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\bin\Release\System.Buffers.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\bin\Release\System.Memory.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\bin\Release\EntityFramework.xml
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\bin\Release\Google.Protobuf.pdb
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\bin\Release\Google.Protobuf.xml
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\bin\Release\K4os.Compression.LZ4.xml
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\bin\Release\K4os.Compression.LZ4.Streams.xml
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\bin\Release\K4os.Hash.xxHash.xml
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\bin\Release\System.Buffers.xml
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\bin\Release\System.Memory.xml
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\obj\Release\Model.csproj.CoreCompileInputs.cache
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\obj\Release\Model.csproj.CopyComplete
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\obj\Release\Model.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\obj\Release\Model.pdb
+C:\Users\jose.diaz\Documents\cosas\Erp\Model\obj\Release\Model.csproj.AssemblyReference.cache
+D:\cosas\Erp\Model\bin\Release\Model.dll.config
+D:\cosas\Erp\Model\bin\Release\Model.dll
+D:\cosas\Erp\Model\bin\Release\Model.pdb
+D:\cosas\Erp\Model\bin\Release\BouncyCastle.Crypto.dll
+D:\cosas\Erp\Model\bin\Release\EntityFramework.dll
+D:\cosas\Erp\Model\bin\Release\EntityFramework.SqlServer.dll
+D:\cosas\Erp\Model\bin\Release\Google.Protobuf.dll
+D:\cosas\Erp\Model\bin\Release\K4os.Compression.LZ4.dll
+D:\cosas\Erp\Model\bin\Release\K4os.Compression.LZ4.Streams.dll
+D:\cosas\Erp\Model\bin\Release\K4os.Hash.xxHash.dll
+D:\cosas\Erp\Model\bin\Release\MySql.Data.dll
+D:\cosas\Erp\Model\bin\Release\MySql.Data.Entity.EF6.dll
+D:\cosas\Erp\Model\bin\Release\System.Buffers.dll
+D:\cosas\Erp\Model\bin\Release\System.Memory.dll
+D:\cosas\Erp\Model\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+D:\cosas\Erp\Model\bin\Release\EntityFramework.xml
+D:\cosas\Erp\Model\bin\Release\EntityFramework.SqlServer.xml
+D:\cosas\Erp\Model\bin\Release\Google.Protobuf.pdb
+D:\cosas\Erp\Model\bin\Release\Google.Protobuf.xml
+D:\cosas\Erp\Model\bin\Release\K4os.Compression.LZ4.xml
+D:\cosas\Erp\Model\bin\Release\K4os.Compression.LZ4.Streams.xml
+D:\cosas\Erp\Model\bin\Release\K4os.Hash.xxHash.xml
+D:\cosas\Erp\Model\bin\Release\System.Buffers.xml
+D:\cosas\Erp\Model\bin\Release\System.Memory.xml
+D:\cosas\Erp\Model\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+D:\cosas\Erp\Model\obj\Release\Model.csproj.AssemblyReference.cache
+D:\cosas\Erp\Model\obj\Release\Model.csproj.CoreCompileInputs.cache
+D:\cosas\Erp\Model\obj\Release\Model.csproj.CopyComplete
+D:\cosas\Erp\Model\obj\Release\Model.dll
+D:\cosas\Erp\Model\obj\Release\Model.pdb
+\\Mac\Home\Downloads\Erp\Model\bin\Release\Model.dll.config
+\\Mac\Home\Downloads\Erp\Model\bin\Release\Model.dll
+\\Mac\Home\Downloads\Erp\Model\bin\Release\Model.pdb
+\\Mac\Home\Downloads\Erp\Model\bin\Release\BouncyCastle.Crypto.dll
+\\Mac\Home\Downloads\Erp\Model\bin\Release\EntityFramework.dll
+\\Mac\Home\Downloads\Erp\Model\bin\Release\EntityFramework.SqlServer.dll
+\\Mac\Home\Downloads\Erp\Model\bin\Release\Google.Protobuf.dll
+\\Mac\Home\Downloads\Erp\Model\bin\Release\K4os.Compression.LZ4.dll
+\\Mac\Home\Downloads\Erp\Model\bin\Release\K4os.Compression.LZ4.Streams.dll
+\\Mac\Home\Downloads\Erp\Model\bin\Release\K4os.Hash.xxHash.dll
+\\Mac\Home\Downloads\Erp\Model\bin\Release\MySql.Data.dll
+\\Mac\Home\Downloads\Erp\Model\bin\Release\MySql.Data.Entity.EF6.dll
+\\Mac\Home\Downloads\Erp\Model\bin\Release\System.Buffers.dll
+\\Mac\Home\Downloads\Erp\Model\bin\Release\System.Memory.dll
+\\Mac\Home\Downloads\Erp\Model\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+\\Mac\Home\Downloads\Erp\Model\bin\Release\EntityFramework.xml
+\\Mac\Home\Downloads\Erp\Model\bin\Release\EntityFramework.SqlServer.xml
+\\Mac\Home\Downloads\Erp\Model\bin\Release\Google.Protobuf.pdb
+\\Mac\Home\Downloads\Erp\Model\bin\Release\Google.Protobuf.xml
+\\Mac\Home\Downloads\Erp\Model\bin\Release\K4os.Compression.LZ4.xml
+\\Mac\Home\Downloads\Erp\Model\bin\Release\K4os.Compression.LZ4.Streams.xml
+\\Mac\Home\Downloads\Erp\Model\bin\Release\K4os.Hash.xxHash.xml
+\\Mac\Home\Downloads\Erp\Model\bin\Release\System.Buffers.xml
+\\Mac\Home\Downloads\Erp\Model\bin\Release\System.Memory.xml
+\\Mac\Home\Downloads\Erp\Model\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+\\Mac\Home\Downloads\Erp\Model\obj\Release\Model.csproj.AssemblyReference.cache
+\\Mac\Home\Downloads\Erp\Model\obj\Release\Model.csproj.CoreCompileInputs.cache
+\\Mac\Home\Downloads\Erp\Model\obj\Release\Model.csproj.CopyComplete
+\\Mac\Home\Downloads\Erp\Model\obj\Release\Model.dll
+\\Mac\Home\Downloads\Erp\Model\obj\Release\Model.pdb

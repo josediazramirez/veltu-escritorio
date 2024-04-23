@@ -1,0 +1,69 @@
+﻿<Page x:Class="ErpClass.pageventadia"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ErpClass"
+          xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      mc:Ignorable="d" MinWidth="1">
+
+    <Grid>
+        <Label x:Name="label_Copy3"  Content="VENTAS POR FECHA" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top"  FontSize="20" FontFamily="Arial"  Height="38" FontWeight="Bold"/>
+        <Label x:Name="label_Copy" Content="DETALLE VENTA"  HorizontalAlignment="Right" Margin="0,5,260,0"   VerticalAlignment="Top"  FontSize="20" FontFamily="Arial"  Height="38" FontWeight="Bold"/>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="5,50,0,0">
+            <DatePicker x:Name="fecha" SelectedDate="{x:Static sys:DateTime.Now}"  Height="20"  Width="160"/>
+            <Label Foreground="White" Content="Filtro" FontSize="20"></Label>
+            <TextBox Margin="10,0,10,0" x:Name="txt_filtro"  Width="160"></TextBox>
+            <Button x:Name="btn_buscar" Height="30" Content="BUSCAR" Click="btn_buscar_Click"></Button>
+        </StackPanel>
+        <DataGrid x:Name="dg_comandas"  Height="Auto" Width="auto" HorizontalAlignment="Left" Margin="5,90,0,10" IsReadOnly="True" SelectionMode="Single" CanUserAddRows="False" AutoGenerateColumns="False"  FontSize="13" FontWeight="Bold" >
+            <DataGrid.Columns>
+                <DataGridTemplateColumn CanUserResize="False" Width="40">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Name="btn_detalle" Click="btn_detalle_Click" >
+                                <Image Source="/Recursos/buscar.png" Height="15"></Image>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <!--<DataGridTemplateColumn CanUserResize="False" Width="40">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Name="btn_cancelar_pedido" Click="btn_cancelar_pedido_Click" >
+                                <Image Source="/Recursos/cancelar.ico" Height="20"/>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                    <DataGridTemplateColumn.CellStyle>
+                        <Style TargetType="{x:Type DataGridCell}">
+                            <Setter Property="Visibility" Value="{Binding cancelar_visible }"/>
+                        </Style>
+                    </DataGridTemplateColumn.CellStyle>
+                </DataGridTemplateColumn>-->
+                <DataGridTextColumn Header="CODIGO" Binding="{Binding codigo}" Width="80"  />
+                <DataGridTextColumn Header="estado" Binding="{Binding estado}" Width="100"  FontSize="13">
+                    <DataGridTextColumn.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="BorderBrush" Value="{Binding estado_color}" />
+                            <Setter Property="BorderThickness" Value="2"></Setter>
+                            <Setter Property="Width" Value="100"/>
+                            <Setter Property="Height" Value="30"/>
+                        </Style>
+                    </DataGridTextColumn.CellStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Fecha y hora " Binding="{Binding fecha}" Width="170"  FontSize="13"/>
+
+                <DataGridTextColumn Header="Telefono" Binding="{Binding cl_numero}" Width="100"  FontSize="13"/>
+                <DataGridTextColumn Header="Dirección" Binding="{Binding Direccion}" Width="200"  FontSize="13"/>
+                <DataGridTextColumn Header="Total" Binding="{Binding total,StringFormat={}$ {0:N0}}" Width="70"  FontSize="13"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <!--COMANDA-->
+        <TextBox x:Name="tb_comanda"  Height="600"   Width="400"  TextWrapping="Wrap"  Margin="0,90,30,0" HorizontalAlignment="Right"  VerticalAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Auto"  FontSize="16"  FontFamily="Arial" IsReadOnly="True"/>
+        
+        <Label x:Name="lb_num" Content="" HorizontalAlignment="Left" Margin="839,51,0,0" VerticalAlignment="Top" Width="132" FontFamily="Yu Gothic Medium"  Height="42" FontWeight="Bold" FontSize="22"/>
+        <Button x:Name="btn_imprimir" Margin="0,0,30,50" Width="400" Content="IMPRIMIR" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="35" FontSize="15" Click="btn_imprimir_Click"/>
+
+    </Grid>
+</Page>

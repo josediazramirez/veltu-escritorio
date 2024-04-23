@@ -1,0 +1,50 @@
+﻿<Page x:Class="ErpClass.cajadia"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ErpClass"
+          xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      mc:Ignorable="d" MinWidth="1">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label x:Name="label_Copy3"  Content="APERTURAS DE CAJA" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top"  FontSize="20" FontFamily="Arial"  Height="38" FontWeight="Bold"/>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="5,50,0,0">
+            <DatePicker x:Name="fecha" SelectedDate="{x:Static sys:DateTime.Now}"  Height="20"  Width="160"/>
+            <Button x:Name="btn_buscar" Height="30" Content="BUSCAR" Click="btn_buscar_Click"></Button>
+        </StackPanel>
+        <DataGrid x:Name="grid_caja"  Height="Auto" Width="auto" HorizontalAlignment="Left" Margin="5,90,0,10" IsReadOnly="True" SelectionMode="Single" CanUserAddRows="False" AutoGenerateColumns="False"  FontSize="13" FontWeight="Bold" >
+            <DataGrid.Columns>
+                <DataGridTemplateColumn CanUserResize="False" Width="40">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Name="btn_detalle" Click="btn_detalle_Click" >
+                                <Image Source="/Recursos/buscar.png" Height="15"></Image>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="CODIGO" Binding="{Binding codigo}" Width="80"  />
+                <DataGridTextColumn Header="ESTADO" Binding="{Binding estado}" Width="100"  FontSize="13"/>
+
+                <DataGridTextColumn Header="FECHA" Binding="{Binding fecha}" Width="80"  FontSize="13"/>
+                <DataGridTextColumn Header="HORA INI." Binding="{Binding hora_inicio}" Width="200"  FontSize="13"/>
+                <DataGridTextColumn Header="HORA TER." Binding="{Binding hora_termino}" Width="200"  FontSize="13"/>
+                <DataGridTextColumn Header="TOTAL" Binding="{Binding total,StringFormat={}$ {0:N0}}" Width="70"  FontSize="13"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label x:Name="det"  Content="DETALLE DE CAJA" Grid.Row="1" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top"  FontSize="20" FontFamily="Arial"  Height="38" FontWeight="Bold"/>
+        <DataGrid x:Name="grid_caja_det" Grid.Row="1"  Height="Auto" Width="700" HorizontalAlignment="Left" Margin="5,90,0,10" IsReadOnly="True" SelectionMode="Single" CanUserAddRows="False" AutoGenerateColumns="False"  FontSize="13" FontWeight="Bold" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="MOVIMIENTO" Binding="{Binding movimiento}" Width="200"  />
+                <DataGridTextColumn Header="TOTAL ENTRADA" Binding="{Binding total_ent,StringFormat={}$ {0:N0}}" Width="200"  FontSize="13"/>
+                <DataGridTextColumn Header="TOTAL SALIDA" Binding="{Binding total_sal,StringFormat={}$ {0:N0}}" Width="200"  FontSize="13"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+   
+</Page>

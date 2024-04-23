@@ -1,0 +1,29 @@
+﻿<Controls:MetroWindow x:Class="ErpClass.ModalItem"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:ErpClass"
+                      WindowTransitionsEnabled="False"
+        mc:Ignorable="d"
+       Height="300" Width="500"
+                      UseNoneWindowStyle="True"
+                      FontFamily="Roboto Medium"
+                      WindowStyle="None"
+                      ResizeMode="NoResize"
+                      ShowCloseButton="False"
+                      WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock x:Name="lb_texto" FontSize="25" FontWeight="Bold" Text="INGRESE COLOR" HorizontalAlignment="Center"></TextBlock>
+            <TextBox x:Name="tb_texto" FontSize="20" Background="White" ></TextBox>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10,10,10,0" >
+                <Button x:Name="btn_cancelar" Background="#D92929" Foreground="White" Content="CANCELAR"  HorizontalAlignment="Center" Margin="10" VerticalAlignment="Bottom"  Width="140" FontSize="25" FontWeight="Bold" Click="btn_cancelar_Click"/>
+                <Button x:Name="btn_aceptar" Background="#4262FF" Foreground="White" Content="ACEPTAR" HorizontalAlignment="Center" Margin="10"  VerticalAlignment="Bottom" Width="140" FontSize="25" FontWeight="Bold" Click="Button_Click"/>
+            </StackPanel>
+            
+        </StackPanel>
+
+    </Grid>
+</Controls:MetroWindow>

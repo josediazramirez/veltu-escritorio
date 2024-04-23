@@ -1,0 +1,273 @@
+﻿<Page x:Class="ErpClass.Pagenotaventa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+      xmlns:local="clr-namespace:ErpClass"
+      mc:Ignorable="d" 
+          xmlns:fa="http://schemas.fontawesome.io/icons/"
+      FontFamily="Roboto Medium">
+    <Grid  Margin="5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="1.2*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Margin="0,0,5,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition ></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Image Source="/Recursos/codigo.png" Width="35" Margin="2"/>
+            <TextBox x:Name="txt_buscar"
+                     Grid.Column="1" 
+                     Foreground="Black"
+                     Background="#FFF6F7F9" 
+                     FontSize="20" 
+                     FontFamily="Arial" 
+                     FontWeight="Bold"
+                     KeyUp="txt_buscar_KeyUp"/>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Button x:Name="btn_descuento" Content="REALIZAR DESCUENTO" Click="btn_descuento_Click" FontSize="20" Margin="2" Width="350" HorizontalAlignment="Right"></Button>
+        </Grid>
+        <Label Grid.Row="1" Margin="0,0,5,0" FontSize="20" Foreground="White" Background="#34495E" Content="BÚSQUEDA DE PRODUCTOS"></Label>
+
+        <DataGrid x:Name="dgi_producto" AutoGenerateColumns="False" 
+                                            Margin="0,0,5,0"
+                  Width="auto"
+                  Height="auto"
+                  SelectionMode="Single" 
+                  IsReadOnly="True"
+                     FontSize="14"
+                      FontWeight="Bold"
+                  RowDetailsVisibilityMode="Visible"
+                      Grid.Column="0"
+                                           Grid.Row="2"
+                   >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="cod" Binding="{Binding codigo}" Width="60"/>
+
+                <DataGridTextColumn Header="Producto"  Binding="{Binding producto}" Width="250"/>
+                <DataGridTextColumn Header="Centro" Binding="{Binding centro}" Width="80">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Right"></Setter>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="STOCK" Binding="{Binding stock_formato}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Right"></Setter>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Precio" Binding="{Binding precio, StringFormat={}$ {0:N0}}" >
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Right" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTemplateColumn CanUserResize="False" >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="btn_mas" Background="Transparent" Click="btn_pedido_Click">
+                                <Image Source="/Recursos/add.png" Height="20" />
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="DETALLE DE VENTA" Grid.Row="1" Grid.Column="1" FontSize="20" Foreground="White" Background="#34495E" ></Label>
+        <DataGrid x:Name="dgi_detalles"
+                        CellEditEnding="dgi_detalles_CellEditEnding"
+                      CanUserAddRows="False"
+                      Grid.Column="2"
+                      Grid.Row="2"
+                      Width="auto"
+                      Height="auto"
+                      SelectionMode="Single" 
+                      RowDetailsVisibilityMode="Visible"
+                       FontSize="14"
+                      FontWeight="Bold" AutoGenerateColumns="False">
+            <DataGrid.Columns >
+                
+                <DataGridTemplateColumn CanUserResize="False" IsReadOnly="true" Width="30" >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="btn_delete" Background="Transparent" HorizontalAlignment="Center" Click="btn_delete" FontSize="12">
+                                <Image Source="/Recursos/cancelar.ico" Height="20" />
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn CanUserResize="False" Width="30" IsReadOnly="true" >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBox x:Name="txt_cant" TextChanged="txt_cant_TextChanged"></TextBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn IsReadOnly="true" Header="Cant" Binding="{Binding Cantidad_formato}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="HorizontalAlignment" Value="Right" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn IsReadOnly="true" Header="Total" Binding="{Binding total, StringFormat=$ \{0:N0\}}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="HorizontalAlignment" Value="Right" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTemplateColumn CanUserResize="False"  IsReadOnly="true">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="btn_edit" Visibility="{Binding verBtn}" Background="Transparent" Click="btn_edit_Click">
+                                <Image Source="/Recursos/edit.ico" Height="15"/>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn IsReadOnly="true" Header="Cod" Binding="{Binding codigo}" Width="60"/>
+                <DataGridTextColumn IsReadOnly="true" Header="Producto"  Binding="{Binding producto}" Width="200"/>
+                <DataGridTextColumn IsReadOnly="true"  Header="Centro"  Binding="{Binding centro}"/>
+                <DataGridTextColumn IsReadOnly="true" Header="precio" Binding="{Binding precio, StringFormat=$ \{0:N0\}}"  >
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="HorizontalAlignment" Value="Right" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn x:Name="desc"  Header="Descuento" Binding="{Binding Precio_desc, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="HorizontalAlignment" Value="Right" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Grid Grid.Row="3" Background="#34495E" Margin="0,0,5,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition ></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition ></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Content="LUGAR DE RETIRO" Grid.Row="0" Foreground="White" FontSize="22" FontWeight="Bold"></Label>
+            <Label Content="INFORMACIÓN CLIENTE" Background="#3498DB" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" Foreground="White" FontSize="20" FontWeight="Bold"></Label>
+            <RadioButton Name="ventalocal" GroupName="entrega" 
+                                 Grid.Row="2"
+                            Foreground="White" FontSize="14"
+                                     Content="VENTA LOCAL" 
+                                     FontWeight="Bold"  >
+                <RadioButton.RenderTransform>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                </RadioButton.RenderTransform>
+            </RadioButton>
+            <RadioButton Name="retiro" GroupName="entrega" 
+                                 Grid.Row="3"
+                                Foreground="White" FontSize="14"
+                                     Content="RETIRO EN 48HR" 
+                                     FontWeight="Bold">
+                <RadioButton.RenderTransform>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                </RadioButton.RenderTransform>
+            </RadioButton>
+            <RadioButton Name="despacho" GroupName="entrega" 
+                                Foreground="White" FontSize="14"
+                                 Grid.Row="1"
+                                 Grid.Column="0"
+                                     Content="DESPACHO" 
+                                     FontWeight="Bold" 
+                                       >
+                <RadioButton.RenderTransform>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                </RadioButton.RenderTransform>
+            </RadioButton>
+            <Label x:Name="lb_rut"  FontSize="18" Foreground="White" HorizontalAlignment="Left" FontWeight="Bold" Content="RUT" Grid.Column="1" Grid.Row="1"></Label>
+            <Label x:Name="lb_correo"  FontSize="18" Foreground="White" HorizontalAlignment="Left" FontWeight="Bold" Content="CORREO" Grid.Column="1" Grid.Row="2"></Label>
+            
+            <Label x:Name="lb_nombre"  FontSize="18" Foreground="White" HorizontalAlignment="Left" FontWeight="Bold" Content="NOMBRE" Grid.Column="1" Grid.Row="3"></Label>
+            <Label x:Name="lb_telefono" FontSize="18" Foreground="White" HorizontalAlignment="Left" FontWeight="Bold" Content="TELEFONO" Grid.Column="1" Grid.Row="4"></Label>
+            <Label x:Name="lb_telefono_opc" FontSize="18" Foreground="White" HorizontalAlignment="Left" FontWeight="Bold" Content="TELEFONO 2" Grid.Column="1" Grid.Row="5"></Label>
+            <Label x:Name="lb_direccion" FontSize="18" Foreground="White" HorizontalAlignment="Left" FontWeight="Bold" Content="DIRECCIÓN" Grid.Column="1" Grid.Row="6"></Label>
+            <Label x:Name="lb_flete" FontSize="18" Foreground="White" HorizontalAlignment="Left" FontWeight="Bold" Content="TRANSPORTE" Grid.Column="1" Grid.Row="7"></Label>
+
+            <TextBox x:Name="tb_rut"  FontWeight="Bold" FontSize="16" Grid.Column="3" Grid.Row="1" Margin="5"></TextBox>
+            <TextBox x:Name="tb_correo"  FontWeight="Bold" FontSize="16" Grid.Column="3" Grid.Row="2" Margin="5"></TextBox>
+            
+            <TextBox x:Name="tb_nombre"  FontWeight="Bold" FontSize="16" Grid.Column="3" Grid.Row="3" Margin="5"></TextBox>
+            <TextBox x:Name="tb_telefono" MaxLength="9" FontWeight="Bold" FontSize="16" Grid.Column="3" Grid.Row="4" Margin="5"></TextBox>
+            <TextBox x:Name="tb_telefono_opc" MaxLength="9" FontWeight="Bold" FontSize="16" Grid.Column="3" Grid.Row="5" Margin="5"></TextBox>
+            <TextBox x:Name="tb_direccion" TextWrapping="Wrap" AcceptsReturn="True"  FontWeight="Bold" FontSize="16" Grid.Column="3" Grid.Row="6" Margin="5"></TextBox>
+            <ComboBox x:Name="cbx_flete" DisplayMemberPath="nombre" SelectedIndex="0" SelectedValuePath="codigo" FontWeight="Bold" FontSize="16" Grid.Column="3" Grid.Row="7" Margin="5"></ComboBox>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="4">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lb_desc" Content="DESCUENTO"  Background="#3498DB" FontSize="40"  Foreground="White" FontWeight="Bold"  Grid.ColumnSpan="3" Grid.Row="0" />
+            <Label x:Name="lb_desc_total" Content="SUB TOTAL" Grid.Row="1"  VerticalAlignment="Top" Background="#3498DB" VerticalContentAlignment="Center" FontSize="40"  Foreground="White" FontWeight="Bold"  Grid.ColumnSpan="3" />
+            <Label x:Name="lb_total" Content="TOTAL" Grid.Row="2"  VerticalAlignment="Top" Background="#3498DB" VerticalContentAlignment="Center" FontSize="40"  Foreground="White" FontWeight="Bold"  Grid.ColumnSpan="3" />
+
+            
+            <Button 
+
+                        x:Name="btn_canl_cam"
+                Margin="5"
+                Grid.Row="3"
+                FontSize="25"
+                        Content="CANCELAR"  
+                      />
+
+            <Button x:Name="btn_pedido"
+                    Margin="5"
+                        Content="ACEPTAR"  
+                        FontSize="25" 
+                        Click="realizarComanda_Click"
+                            Grid.Row="3"
+                            Grid.Column="3"/>
+            <Button 
+
+                        x:Name="btn_cotizacion"
+                Margin="5"
+                Grid.Row="4"
+                FontSize="25"
+                Click="btn_cotizacion_Click"
+                        Content="COTIZACIÓN"  
+                      />
+        </Grid>
+    </Grid>
+</Page>

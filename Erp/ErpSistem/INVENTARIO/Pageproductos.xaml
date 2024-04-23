@@ -1,0 +1,369 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFAutoCompleteTextbox"
+      xmlns:Custom="http://metro.mahapps.com/winfx/xaml/controls" 
+    
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    x:Class="ErpClass.Pageproductos"
+      mc:Ignorable="d" 
+       Title="Pagehome" >
+
+    <Grid Background="#DCDCDC">
+        <TabControl x:Name="menuCarta" Height="auto" Width="auto" >
+            <TabItem Header="PRODUCTO" x:Name="pro_menu">
+                <Grid>
+                    <Label x:Name="label_Copy3" Content="Código" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="220"  Height="37" FontWeight="Bold" FontSize="18" FontFamily="Arial" 
+                           />
+                    <ComboBox x:Name="cbx_categoria"
+                              IsTextSearchEnabled="True" HorizontalAlignment="Left" Margin="98,86,0,0" VerticalAlignment="Top" Width="216" DisplayMemberPath="nombre" SelectedValuePath="codigo"  SelectedIndex="0"  Height="30" FontFamily="Arial" FontSize="14"/>
+                    <Label x:Name="label_Copy4" Content="Categoria" HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top" Width="88" Height="33" FontSize="17" RenderTransformOrigin="0.643,0.4" FontWeight="Bold" 
+                          />
+                    <TextBox x:Name="codigo" HorizontalAlignment="Left" Height="32" Margin="98,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" FontSize="15" Visibility="Visible" IsEnabled="False" FontWeight="Bold" />
+                    <Label x:Name="label_Copy2" Content="Precio" HorizontalAlignment="Left" Margin="15,119,0,0" VerticalAlignment="Top" Width="89" Height="31" FontSize="17" FontWeight="Bold" 
+                           />
+                    <TextBox x:Name="tb_precio"
+                             HorizontalAlignment="Left" Height="32" Margin="98,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" FontSize="17" FontFamily="Arial" 
+                            />
+                    <Label x:Name="validar_nombre"  HorizontalAlignment="Left" Margin="264.4,48,0,0" VerticalAlignment="Top" Width="24" Height="31" FontSize="24" FontWeight="Bold" Foreground="Red"/>
+                    <Label x:Name="validar_categoria"  HorizontalAlignment="Left" Margin="260.4,81,0,0" VerticalAlignment="Top" Width="24" Height="31" FontSize="24" FontWeight="Bold" Foreground="Red">
+                    </Label>
+                    <Label x:Name="validar_precio"  HorizontalAlignment="Left" Margin="264.4,120,0,0" VerticalAlignment="Top" Width="24" Height="31" FontSize="24" FontWeight="Bold" Foreground="Red" />
+                    <Label x:Name="label_Copy1" Content="filtro" HorizontalAlignment="Left" Margin="-1,165,0,0" VerticalAlignment="Top" Width="89" Height="31" FontSize="17" FontWeight="Bold"/>
+                    <Label x:Name="label_Copy5" Content="EAN" HorizontalAlignment="Left" Margin="220.2,10,0,0" VerticalAlignment="Top" Width="89" Height="31" FontSize="17" FontWeight="Bold"/>
+                    <TextBox x:Name="tb_ean" HorizontalAlignment="Left" Height="32" Margin="276.2,11,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" FontSize="14" FontFamily="Arial"/>
+                    <TextBox x:Name="tb_filtro_producto" HorizontalAlignment="Left" Height="32" Margin="64,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" FontSize="17" FontFamily="Arial" KeyUp="TextBox_TextChanged"/>
+                    <Label x:Name="label_Copy6" Content="MARCA" HorizontalAlignment="Left" Margin="463,46,0,0" VerticalAlignment="Top" Width="89" Height="31" FontSize="17" FontWeight="Bold"/>
+                    <Label x:Name="label_Copy7" Content="COLOR" HorizontalAlignment="Left" Margin="462,80,0,0" VerticalAlignment="Top" Width="89" Height="31" FontSize="17" FontWeight="Bold"/>
+
+                    <ComboBox x:Name="cbx_marca" SelectedValuePath="idmarca" HorizontalAlignment="Left" Margin="562,46,0,0" VerticalAlignment="Top" Width="208" DisplayMemberPath="nombre"  SelectedIndex="0"  Height="30" FontFamily="Arial" FontSize="14"/>
+                    <Button x:Name="btn_add_mar" Content="agregar marca"  HorizontalAlignment="Left" Margin="782,46,0,0" VerticalAlignment="Top"    Height="30" FontFamily="Arial" FontSize="14" Click="btn_add_mar_Click"/>
+
+                    <ComboBox x:Name="cbx_color" SelectedValuePath="idcolor" HorizontalAlignment="Left" Margin="562,81,0,0" VerticalAlignment="Top" Width="208" DisplayMemberPath="nombre" SelectedIndex="0"  Height="30" FontFamily="Arial" FontSize="14"/>
+                    <Button x:Name="btn_add_color" Content="agregar color"  HorizontalAlignment="Left" Margin="782,81,0,0" VerticalAlignment="Top" Height="30" FontFamily="Arial" FontSize="14" Click="btn_add_color_Click"/>
+
+                    <Label x:Name="label_nombre" Content="Nombre" HorizontalAlignment="Left" Margin="9,52,0,0" VerticalAlignment="Top" Width="89" Height="31" FontSize="17" FontWeight="Bold"/>
+                    <Button x:Name="btn_addCli"  HorizontalAlignment="Left" Margin="875,131,0,0" VerticalAlignment="Top" Width="93" Height="60"  Click="btn_addCli_Click" >
+                        <StackPanel Height="60" Width="80" >
+                            <Image Source="/Recursos/add.png" Height="20" Margin="0,5,0,2"/>
+
+                            <TextBlock HorizontalAlignment="Center" Margin="9,0,10,0"><Run Text="Agregar" FontWeight="Bold" FontSize="14"/></TextBlock>
+                        </StackPanel>
+                    </Button>
+
+                    <TextBox x:Name="tb_nombre"  HorizontalAlignment="Left" Height="32" Margin="98,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" FontSize="14" FontFamily="Arial"/>
+
+                    <Button x:Name="btn_guardar" Visibility="Hidden"  HorizontalAlignment="Left" Margin="778,131,0,0" VerticalAlignment="Top" Width="90" Height="55" Click="btn_guardar_pro" RenderTransformOrigin="-0.427,0.535" >
+                        <StackPanel Height="59" Width="80">
+                            <Image Source="/Recursos/save.ico" Height="20" Margin="0,5,0,2" />
+                            <TextBlock HorizontalAlignment="Center" Margin="12,0,11,0"><Run Text="Guardar"/></TextBlock>
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="btn_cancelar" Visibility="Hidden"  HorizontalAlignment="Left" Margin="878,136,0,0" VerticalAlignment="Top" Width="90" Height="55"    Click="btn_cancelar_pro_Click" RenderTransformOrigin="1.738,-2.635">
+                        <StackPanel Height="60" Width="80" >
+                            <Image Source="/Recursos/cancelar.ico" Height="20" Margin="0,5,0,2"/>
+                            <TextBlock HorizontalAlignment="Center"><Run Text="Cancelar"/></TextBlock>
+                        </StackPanel>
+                    </Button>
+                    <DataGrid x:Name="dgrid_productos" IsReadOnly="True" SelectionMode="Single"  CanUserAddRows="False" AutoGenerateColumns="False" Margin="10,220,20,140"  FontWeight="Bold" FontSize="14" Grid.ColumnSpan="2">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn  Binding="{Binding codigo}" Visibility="Hidden"/>
+
+                            <DataGridTextColumn  Binding="{Binding categoria}" Visibility="Hidden"/>
+                            <DataGridTextColumn Header="Código" Binding="{Binding codigo}" Width="80"/>
+                            <DataGridTextColumn Header="Ean" Binding="{Binding ean}" Width="120" />
+                            <DataGridTextColumn Header="Nombre" Binding="{Binding nombre}" Width="300" />
+                            <DataGridTextColumn Header="Color" Binding="{Binding color}" Width="100"  />
+                            <DataGridTextColumn Header="Marca" Binding="{Binding marca}" Width="120" />
+                            <DataGridTextColumn Header="Precio" Binding="{Binding precio, StringFormat={}{0:n0}}"  Width="80"  />
+                            <DataGridTextColumn Header="Precio Cos." Binding="{Binding precio_costo, StringFormat={}{0:n0}}" Width="100"  />
+                            <DataGridTextColumn Header="Categoria" Binding="{Binding name_categoria}" Width="150" />
+                            <DataGridTemplateColumn Header="Estado"  CanUserResize="False" Width="70" IsReadOnly="False" >
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <CheckBox x:Name="btn_estado_producto" HorizontalAlignment="Center" Click="btn_estado_producto_Click" IsChecked="{Binding estado}" >
+                                            <CheckBox.LayoutTransform>
+                                                <ScaleTransform ScaleX="1.5" ScaleY="1.5" />
+                                            </CheckBox.LayoutTransform>
+                                        </CheckBox>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn CanUserResize="False" Width="70" >
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button x:Name="btn_editar"  Content="Editar" Click="btn_editar_Click"   />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Label x:Name="label_pre_costo" Content="Precio costo" HorizontalAlignment="Left" Margin="433,126,0,0" VerticalAlignment="Top" Width="125" Height="31" FontSize="17" FontWeight="Bold" 
+                           />
+                    <TextBox x:Name="tb_precio_costo"
+                        HorizontalAlignment="Left" Height="32" Margin="562,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" FontSize="17" FontFamily="Arial" 
+                            />
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="INVENTARIO" x:Name="inv_menu">
+                <Grid>
+                    <Grid x:Name="form_ing_egre" Margin="0,0,10.4,46.2">
+                        <Button x:Name="btn_form_inv"  HorizontalAlignment="Left" Margin="0,20,0,0" VerticalAlignment="Top" Width="208" Height="61" Click="btn_form_inv_Click">
+                            <StackPanel Height="60" Width="200" VerticalAlignment="Center"  >
+                                <Image Source="/Recursos/add.png" Height="20" Margin="0,5,0,2"/>
+                                <TextBlock Margin="22,0,10,0" Height="28"><Run Text="INGRESAR PRODUCTO" FontWeight="Bold" FontSize="14"/></TextBlock>
+                            </StackPanel>
+                        </Button>
+                    </Grid>
+                    <Grid x:Name="form_inv" Margin="0,0,10.4,46.2" Visibility="Hidden">
+                        <Button x:Name="btn_save_inv"  HorizontalAlignment="Left" Margin="783,101,0,0" VerticalAlignment="Top" Width="87" Height="61"  Click="btn_save_inv_Click">
+                            <StackPanel Height="60" Width="80" >
+                                <Image Source="/Recursos/add.png" Height="20" Margin="0,5,0,2"/>
+                                <TextBlock HorizontalAlignment="Center" Margin="9,0,10,0"><Run Text="Agregar" FontWeight="Bold" FontSize="14"/></TextBlock>
+                            </StackPanel>
+                        </Button>
+
+                        <Button x:Name="btn_guardar_inv" Visibility="Hidden" HorizontalAlignment="Left" Margin="783,105,0,0" VerticalAlignment="Top" Width="90" Height="55" Click="btn_guardar_inv_Click">
+                            <StackPanel Height="59" Width="80">
+                                <Image Source="/Recursos/save.ico" Height="20" Margin="0,5,0,2" />
+                                <TextBlock HorizontalAlignment="Center" Margin="12,0,11,0"><Run Text="Guardar"/></TextBlock>
+                            </StackPanel>
+                        </Button>
+                        <Button x:Name="btn_cancelar_inv"  HorizontalAlignment="Left" Margin="888,102,0,0" VerticalAlignment="Top" Width="95" Height="58"    Click="btn_cancelar_inv_Click">
+                            <StackPanel Height="60" Width="80" >
+                                <Image Source="/Recursos/cancelar.ico" Height="20" Margin="0,5,0,2"/>
+                                <TextBlock HorizontalAlignment="Center"><Run Text="Cancelar"/></TextBlock>
+                            </StackPanel>
+                        </Button>
+
+                        <Label x:Name="lab_codigo" Content="Código" HorizontalAlignment="Left" Margin="0,5,0,0" VerticalAlignment="Top" Width="89" Height="35" FontSize="17" FontWeight="Bold" />
+                        <Label x:Name="lab_pro" Content="Producto" HorizontalAlignment="Left" Margin="1,83,0,0" VerticalAlignment="Top" Width="98"  Height="37" FontWeight="Bold" FontSize="18" FontFamily="Arial"/>
+                        <Label x:Name="lab_categoria" Content="Categoria" HorizontalAlignment="Left" Margin="1,48,0,0" VerticalAlignment="Top" Width="98"  Height="37" FontWeight="Bold" FontSize="18" FontFamily="Arial"/>
+                        <Label x:Name="lab_stock_min" Content="Stock mínimo" HorizontalAlignment="Left" Margin="360,82,0,0" VerticalAlignment="Top" Width="128" Height="31" FontSize="17" FontWeight="Bold" />
+                        <Label x:Name="lab_stock_total" Content="Stock total" HorizontalAlignment="Left" Margin="360,126,0,0" VerticalAlignment="Top" Width="128" Height="31" FontSize="17" FontWeight="Bold" />
+                        <Label x:Name="lab_ubicacion" Content="Ubicación" HorizontalAlignment="Left" Margin="1,123,0,0" VerticalAlignment="Top" Width="98"  Height="37" FontWeight="Bold" FontSize="18" FontFamily="Arial"/>
+                        <Label x:Name="lab_uni_medida" Content="Uni.Medida" HorizontalAlignment="Left" Margin="360,50,0,0" VerticalAlignment="Top" Width="128"  Height="37" FontWeight="Bold" FontSize="18" FontFamily="Arial"/>
+
+                        <TextBox x:Name="tb_cod_inv" IsReadOnly="True" HorizontalAlignment="Left" Height="32" Margin="103,8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129" FontSize="17" FontFamily="Arial"/>
+                        <TextBox x:Name="tb_stock_min" HorizontalAlignment="Left" Height="32" Margin="534,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129" FontSize="17" FontFamily="Arial"/>
+                        <TextBox x:Name="tb_stock_total" HorizontalAlignment="Left" Height="32" Margin="534,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129" FontSize="17" FontFamily="Arial"/>
+
+                        <Label x:Name="validar_nombre_inv"  HorizontalAlignment="Left" Margin="317,48,0,0" VerticalAlignment="Top" Width="24" Height="31" FontSize="24" FontWeight="Bold" Foreground="Red"/>
+                        <Label x:Name="validar_categoria_inv"  HorizontalAlignment="Left" Margin="313,81,0,0" VerticalAlignment="Top" Width="24" Height="31" FontSize="24" FontWeight="Bold" Foreground="Red"/>
+                        <Label x:Name="validar_precio_inv"  HorizontalAlignment="Left" Margin="317,120,0,0" VerticalAlignment="Top" Width="24" Height="31" FontSize="24" FontWeight="Bold" Foreground="Red" />
+
+                        <ComboBox x:Name="cbx_categoria_inv" HorizontalAlignment="Left" Margin="104,48,0,0" VerticalAlignment="Top" Width="208" DisplayMemberPath="nombre" SelectedValuePath="codigo"  SelectedIndex="0"  Height="30" FontFamily="Arial" FontSize="14" SelectionChanged="cbx_categoria_inv_SelectionChanged"/>
+                        <ComboBox x:Name="cbx_pro_inv" SelectedIndex="0" HorizontalAlignment="Left" Margin="104,83,0,0" VerticalAlignment="Top" Width="208" DisplayMemberPath="nombre" SelectedValuePath="codigo"   Height="30" FontFamily="Arial" FontSize="14"/>
+                        <ComboBox x:Name="cbx_ubicacion" HorizontalAlignment="Left" Margin="104,123,0,0" VerticalAlignment="Top" Width="208" DisplayMemberPath="nombre" SelectedValuePath="codigo"  SelectedIndex="0"  Height="30" FontFamily="Arial" FontSize="14"/>
+                        <ComboBox x:Name="cbx_unimedida_inv" HorizontalAlignment="Left" Margin="493,50,0,0" VerticalAlignment="Top" Width="170" DisplayMemberPath="nombre" SelectedValuePath="codigo"  SelectedIndex="0"  Height="30" FontFamily="Arial" FontSize="14"/>
+                    </Grid>
+                    <Grid x:Name="form_stock"  Margin="0,0,10.4,46.2" Visibility="Hidden">
+                        <Button x:Name="btn_save_stock"  HorizontalAlignment="Left" Margin="498,107,0,0" VerticalAlignment="Top" Width="93" Height="58" Click="btn_save_stock_Click">
+                            <StackPanel Height="57" Width="83" VerticalAlignment="Center"  >
+                                <Image Source="/Recursos/add.png" Height="20" Margin="0,5,0.2,2"/>
+                                <TextBlock Margin="10,0" Height="28"><Run Text="Guardar" FontWeight="Bold" FontSize="14"/></TextBlock>
+                            </StackPanel>
+                        </Button>
+                        <Button x:Name="btn_cancelar_stock"  HorizontalAlignment="Left" Margin="603,107,0,0" VerticalAlignment="Top" Width="95" Height="58" Click="btn_cancelar_stock_Click">
+                            <StackPanel Height="60" Width="80" >
+                                <Image Source="/Recursos/cancelar.ico" Height="20" Margin="0,5,0,2"/>
+                                <TextBlock HorizontalAlignment="Center"><Run Text="Cancelar"/></TextBlock>
+                            </StackPanel>
+                        </Button>
+
+                        <Label x:Name="validar_cant_stock"  HorizontalAlignment="Left" Margin="263,124,0,0" VerticalAlignment="Top" Width="230" Height="31" FontSize="24" FontWeight="Bold" Foreground="Red"/>
+
+                        <Label x:Name="lab_cant_stock" Content="Cantidad"  HorizontalAlignment="Left" Margin="10,137,0,-2.2" VerticalAlignment="Top" Width="118" Height="31" FontSize="14" FontWeight="Bold" RenderTransformOrigin="0.429,2.135"/>
+                        <Label x:Name="lab_producto_stock" Content="SKU:"  HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="118" Height="27" FontSize="14" FontWeight="Bold" RenderTransformOrigin="0.429,2.135"/>
+                        <Label x:Name="lab_pro_nombre_stock" Content="Producto:"  HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top" Width="103" Height="31" FontSize="14" FontWeight="Bold" RenderTransformOrigin="0.429,2.135"/>
+                        <Label x:Name="lab_medida" Content="Unidad medida"  HorizontalAlignment="Left" Margin="10,106,0,0" VerticalAlignment="Top" Width="118" Height="31" FontSize="14" FontWeight="Bold" RenderTransformOrigin="0.429,2.135"/>
+                        <Label x:Name="lab_ubicacin" Content="Ubicación:"  HorizontalAlignment="Left" Margin="269,43,0,0" VerticalAlignment="Top" Width="85" Height="31" FontSize="14" FontWeight="Bold" RenderTransformOrigin="0.429,2.135"/>
+                        <Label x:Name="lab_operacion" Content="Ingreso o egreso"  HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Top" Width="688" Height="36" FontSize="20" FontWeight="Bold" RenderTransformOrigin="0.429,2.135"/>
+
+                        <TextBox x:Name="tb_medida" IsReadOnly="True" HorizontalAlignment="Left" Height="25" Margin="133,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" FontSize="17" FontFamily="Arial"/>
+                        <TextBox x:Name="tb_producto" IsReadOnly="True" HorizontalAlignment="Left" Height="26" Margin="133,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" FontSize="17" FontFamily="Arial"/>
+                        <TextBox x:Name="tb_sku" IsReadOnly="True" HorizontalAlignment="Left" Height="26" Margin="133,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" FontSize="17" FontFamily="Arial"/>
+                        <TextBox x:Name="tb_ubicacion" IsReadOnly="True" HorizontalAlignment="Left" Height="26" Margin="375,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" FontSize="17" FontFamily="Arial"/>
+                        <TextBox x:Name="tb_cant_stock" HorizontalAlignment="Left" Height="28" Margin="133,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" FontSize="17" FontFamily="Arial"/>
+
+                        <Label x:Name="lab_stock_actual" Content="Stock actual:"  HorizontalAlignment="Left" Margin="269,77,0,0" VerticalAlignment="Top" Width="99" Height="31" FontSize="14" FontWeight="Bold" RenderTransformOrigin="0.429,2.135"/>
+                        <TextBox x:Name="tb_stock_actual" IsReadOnly="True" HorizontalAlignment="Left" Height="26" Margin="375,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" FontSize="17" FontFamily="Arial"/>
+                    </Grid>
+                    <Label Content="Filtro" FontSize="22" FontWeight="Bold" Margin="0,197,0,0" Width="300" Height="34" VerticalAlignment="Top" HorizontalAlignment="Left" ></Label>
+                    <TextBox x:Name="tb_filtro_inv" Margin="100,197,0,0" Width="300" Height="34" VerticalAlignment="Top" HorizontalAlignment="Left" KeyUp="tb_filtro_inv_KeyUp" ></TextBox>
+                    <StackPanel  Orientation="Horizontal" Margin="400,190,0,0" Height="50"  Width="300" VerticalAlignment="Top" HorizontalAlignment="Left">
+                        <Label FontSize="15" VerticalAlignment="Center">BODEGA</Label>
+                        <ComboBox x:Name="cbx_bodega" Width="200" Height="20" 
+                                  DisplayMemberPath="nombre" SelectedValuePath="codigo" SelectedIndex="0" SelectionChanged="cbx_bodega_SelectionChanged"></ComboBox>
+                    </StackPanel>
+                    <DataGrid x:Name="gridinv" IsReadOnly="True" SelectionMode="Single" CanUserAddRows="False" AutoGenerateColumns="False" Margin="10,240,20,140"  FontWeight="Bold" FontSize="15">
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn CanUserResize="False">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Name="btn_menos" Click="btn_menos_Click">
+                                            <Image Source="/Recursos/menos.png" Height="30"/>
+
+                                        </Button>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn CanUserResize="False">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Name="btn_mas" Click="btn_mas_Click">
+                                            <Image Source="/Recursos/mas.png" Height="30"/>
+
+                                        </Button>
+
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn CanUserResize="False" Width="70" >
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button x:Name="btn_editar"  Content="Editar" Click="btn_editar_inv_Click" FontSize="10"  />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn CanUserResize="False" Width="70">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button x:Name="btn_eliminar"  Content="Eliminar" Click="btn_eliminar_inv_Click" FontSize="10"  />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTextColumn  Binding="{Binding idcategoria}" Visibility="Hidden"/>
+                            <DataGridTextColumn  Binding="{Binding idubicacion}" Visibility="Hidden"/>
+                            <DataGridTextColumn  Binding="{Binding iduni_medida}" Visibility="Hidden"/>
+                            <DataGridTextColumn Header="Cod.Inv" Binding="{Binding cod_inv}"  Width="85" FontSize="13"  />
+                            <DataGridTextColumn Header="Cod.Pro" Binding="{Binding cod_pro}" Width="85"  FontSize="13" />
+                            <DataGridTextColumn Header="NOMBRE" Binding="{Binding nombre}" Width="170"  FontSize="13" />
+                            <DataGridTextColumn Header="CATEGORIA" Binding="{Binding categoria}" Width="105"  FontSize="13" />
+                            <DataGridTextColumn Header="U.medida" Binding="{Binding uni_medida}" Width="100"  FontSize="13" />
+                            <DataGridTextColumn Header="UBICACIÓN" Binding="{Binding ubicacion}" Width="110"  FontSize="13" />
+                            <DataGridTextColumn Header="STOCK MINIMO" Binding="{Binding stock_minimo}" 
+                                                Width="130"  
+                                                FontSize="14">
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="STOCK TOTAL" Binding="{Binding stock_total}" Width="115"  FontSize="13" >
+                                <DataGridTextColumn.CellStyle>
+                                    <Style TargetType="DataGridCell">
+                                        <Setter Property="Background" Value="{Binding stock_minimo_color}" />
+                                        <Setter Property="Width" Value="100"/>
+                                        <Setter Property="Height" Value="30"/>
+                                    </Style>
+                                </DataGridTextColumn.CellStyle>
+                            </DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="MOVIMIENTOS" x:Name="mov_menu">
+                <Grid>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+                        <Label FontSize="15" VerticalAlignment="Center">Fecha inicio</Label>
+                        <DatePicker x:Name="fecha_ini" SelectedDate="{x:Static sys:DateTime.Now}"  Height="20"  Width="160" Margin="10"/>
+                        <Label FontSize="15" VerticalAlignment="Center">Fecha termino</Label>
+
+                        <DatePicker x:Name="fecha_fin" SelectedDate="{x:Static sys:DateTime.Now}" Height="20"  Width="160" Margin="10"/>
+                    </StackPanel>
+                    <StackPanel Margin="0,40,0,20" Orientation="Horizontal" VerticalAlignment="Top" >
+                        <Label FontSize="15" Width="95" VerticalAlignment="Center">Producto</Label>
+
+                        <TextBox x:Name="tbx_producto" Width="200" Height="20"></TextBox>
+                        <Label FontSize="15" VerticalAlignment="Center">Tipo movimiento</Label>
+                        <ComboBox x:Name="cbx_tipo_mov" Width="200" Height="20" DisplayMemberPath="nombre" SelectedValuePath="codigo" SelectedIndex="0"></ComboBox>
+                        <Button x:Name="btn_buscar" Width="150" Margin="20,0,0,0" FontSize="15" Height="30" Content="BUSCAR" Click="btn_buscar_Click"></Button>
+                    </StackPanel>
+                    <DataGrid x:Name="gridmovimiento" IsReadOnly="True" SelectionMode="Single" CanUserAddRows="False" AutoGenerateColumns="False" Margin="10,80,20,140"  FontWeight="Bold" FontSize="15" Grid.ColumnSpan="3">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Id" Binding="{Binding id}"  Width="85" FontSize="13"  />
+                            <DataGridTextColumn Header="Fecha y hora" Binding="{Binding fecha_hora}" Width="85"  FontSize="13" />
+                            <DataGridTextColumn Header="Ubicación" Binding="{Binding ubicacion}" Width="130"  FontSize="13" />
+                            <DataGridTextColumn Header="SKU" Binding="{Binding cod_pro}" Width="80"  FontSize="13" />
+                            <DataGridTextColumn Header="Producto" Binding="{Binding nombre_pro}" Width="170"  FontSize="13" />
+                            <DataGridTextColumn Header="Moviemiento" Binding="{Binding movimiento}" Width="150"  FontSize="13">
+                                <DataGridTextColumn.CellStyle>
+                                    <Style TargetType="DataGridCell">
+                                        <Setter Property="Background" Value="{Binding mov_color}" />
+                                        <Setter Property="Width" Value="150"/>
+                                        <Setter Property="Height" Value="30"/>
+                                    </Style>
+                                </DataGridTextColumn.CellStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="Cant.Mov" Binding="{Binding cantidad}" Width="120"  FontSize="13" />
+                            <DataGridTextColumn Header="Stock anterior" Binding="{Binding stock_ant}" Width="150"  FontSize="13" />
+                            <DataGridTextColumn Header="Stock actual" Binding="{Binding stock_act}" Width="150"  FontSize="13" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="TRANSFERENCIA BODEGA" x:Name="trans_menu">
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid  x:Name="gr_header">
+                        <StackPanel Orientation="Horizontal">
+                            <Label Foreground="Black" FontSize="20" Content="TRANSFERENCIA DE BODEGA"></Label>
+                            <Label x:Name="fecha_actual" Foreground="Black" FontSize="20" ></Label>
+                        </StackPanel>
+                    </Grid>
+                    <Grid Grid.Row="1" x:Name="gr_body">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"></ColumnDefinition>
+                            <ColumnDefinition Width="auto"></ColumnDefinition>
+                            <ColumnDefinition Width="auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel   Orientation="Horizontal" Margin="10">
+                            <Label FontSize="16">Desde</Label>
+                            <ComboBox  DisplayMemberPath="nombre"  SelectedValuePath="idcentro"
+                                       SelectedIndex="0" Width="150" x:Name="cbx_desde" ></ComboBox>
+                        </StackPanel>
+                        <StackPanel  Grid.Column="1" Orientation="Horizontal" Margin="10">
+                            <Label FontSize="16">Hacia</Label>
+                            <ComboBox  DisplayMemberPath="nombre" SelectedValuePath="idcentro" 
+                                       SelectedIndex="0" Width="150" x:Name="cbx_hasta" ></ComboBox>
+                        </StackPanel>
+                        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Margin="10">
+                            <Label FontSize="16">Comentario</Label>
+                            <TextBox Height="50" FontSize="18" x:Name="tbx_comentario" ></TextBox>
+                        </StackPanel>
+                        <StackPanel Grid.Row="2" Orientation="Horizontal" Grid.Column="2" Margin="0,30,0,0">
+                            <Button Height="40" Margin="10" x:Name="CancelarTransferencia" Click="CancelarTransferencia_Click">Cancelar</Button>
+                            <Button Height="40" Margin="10" x:Name="AgregarProductoTransferencia" Click="AgregarProductoTransferencia_Click">Agregar producto</Button>
+                            <Button Height="40" Margin="10" x:Name="RealizarTransferencia" Click="RealizarTransferencia_Click">Realizar transferencia</Button>
+                        </StackPanel>
+                    </Grid>
+                    <Grid Grid.Row="2">
+                        <DataGrid x:Name="tabla_tranfer_pro" Grid.Row="3" Grid.ColumnSpan="2" IsReadOnly="True" SelectionMode="Single" CanUserAddRows="False" AutoGenerateColumns="False" Margin="10" FontWeight="Bold" FontSize="15">
+                            <DataGrid.Columns>
+                                <DataGridTemplateColumn   CanUserResize="False" Width="70">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button x:Name="btn_pro_tran_eliminar" Click="btn_pro_tran_eliminar_Click"  Content="Eliminar"  FontSize="10"  />
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                                <DataGridTextColumn Header="Codigo" Binding="{Binding codigo}"  Width="150" FontSize="13"  />
+                                <DataGridTextColumn Header="Cant.Mov" Binding="{Binding total}" Width="120"  FontSize="13" />
+                                <DataGridTextColumn Header="Producto" Binding="{Binding producto}" Width="400"  FontSize="13" />
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Page>

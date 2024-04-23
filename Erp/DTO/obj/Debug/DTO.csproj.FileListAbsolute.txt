@@ -1,0 +1,414 @@
+C:\Users\Jose\documents\visual studio 2015\Projects\Pizzeria\DTO\bin\Debug\DTO.dll
+C:\Users\Jose\documents\visual studio 2015\Projects\Pizzeria\DTO\bin\Debug\DTO.pdb
+C:\Users\Jose\documents\visual studio 2015\Projects\Pizzeria\DTO\obj\Debug\DTO.dll
+C:\Users\Jose\documents\visual studio 2015\Projects\Pizzeria\DTO\obj\Debug\DTO.pdb
+C:\Users\Jose\documents\visual studio 2015\Projects\Pizzeria\DTO\bin\Debug\DTO.dll.config
+C:\Users\Jose\documents\visual studio 2015\Projects\Pizzeria\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\Nacho\Desktop\Nueva carpeta\v1\Pizzeria\DTO\bin\Debug\DTO.dll.config
+C:\Users\Nacho\Desktop\Nueva carpeta\v1\Pizzeria\DTO\bin\Debug\DTO.dll
+C:\Users\Nacho\Desktop\Nueva carpeta\v1\Pizzeria\DTO\bin\Debug\DTO.pdb
+C:\Users\Nacho\Desktop\Nueva carpeta\v1\Pizzeria\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\Nacho\Desktop\Nueva carpeta\v1\Pizzeria\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Nacho\Desktop\Nueva carpeta\v1\Pizzeria\DTO\obj\Debug\DTO.dll
+C:\Users\Nacho\Desktop\Nueva carpeta\v1\Pizzeria\DTO\obj\Debug\DTO.pdb
+C:\Users\Nacho\Desktop\Pizzeria\Pizzeria\DTO\bin\Debug\DTO.dll.config
+C:\Users\Nacho\Desktop\Pizzeria\Pizzeria\DTO\bin\Debug\DTO.dll
+C:\Users\Nacho\Desktop\Pizzeria\Pizzeria\DTO\bin\Debug\DTO.pdb
+C:\Users\Nacho\Desktop\Pizzeria\Pizzeria\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\Nacho\Desktop\Pizzeria\Pizzeria\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Nacho\Desktop\Pizzeria\Pizzeria\DTO\obj\Debug\DTO.dll
+C:\Users\Nacho\Desktop\Pizzeria\Pizzeria\DTO\obj\Debug\DTO.pdb
+C:\Users\Nacho\Desktop\Pizzeria\Sotfware pizza\Pizzeria\DTO\bin\Debug\DTO.dll.config
+C:\Users\Nacho\Desktop\Pizzeria\Sotfware pizza\Pizzeria\DTO\bin\Debug\DTO.dll
+C:\Users\Nacho\Desktop\Pizzeria\Sotfware pizza\Pizzeria\DTO\bin\Debug\DTO.pdb
+C:\Users\Nacho\Desktop\Pizzeria\Sotfware pizza\Pizzeria\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\Nacho\Desktop\Pizzeria\Sotfware pizza\Pizzeria\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Nacho\Desktop\Pizzeria\Sotfware pizza\Pizzeria\DTO\obj\Debug\DTO.dll
+C:\Users\Nacho\Desktop\Pizzeria\Sotfware pizza\Pizzeria\DTO\obj\Debug\DTO.pdb
+C:\Users\Nacho\Desktop\Pizzeria\Sotfware pizza\Pizzeria\DTO\bin\Debug\Model.dll
+C:\Users\Nacho\Desktop\Pizzeria\Sotfware pizza\Pizzeria\DTO\bin\Debug\EntityFramework.dll
+C:\Users\Nacho\Desktop\Pizzeria\Sotfware pizza\Pizzeria\DTO\bin\Debug\Model.pdb
+C:\Users\Nacho\Desktop\Pizzeria\Sotfware pizza\Pizzeria\DTO\bin\Debug\Model.dll.config
+C:\Users\Nacho\Desktop\Pizzeria\Sotfware pizza\Pizzeria\DTO\bin\Debug\EntityFramework.xml
+C:\Users\Nacho\Desktop\Pizzeria\Sotfware pizza\Pizzeria\DTO\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Nacho\Desktop\Pizzeria\Sotfware pizza\Pizzeria\DTO\bin\Debug\MySql.Data.dll
+C:\Users\Nacho\Documents\Pizzeria\Sotfware pizza\Pizzeria\DTO\bin\Debug\DTO.dll.config
+C:\Users\Nacho\Documents\Pizzeria\Sotfware pizza\Pizzeria\DTO\bin\Debug\DTO.dll
+C:\Users\Nacho\Documents\Pizzeria\Sotfware pizza\Pizzeria\DTO\bin\Debug\DTO.pdb
+C:\Users\Nacho\Documents\Pizzeria\Sotfware pizza\Pizzeria\DTO\bin\Debug\Model.dll
+C:\Users\Nacho\Documents\Pizzeria\Sotfware pizza\Pizzeria\DTO\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Nacho\Documents\Pizzeria\Sotfware pizza\Pizzeria\DTO\bin\Debug\EntityFramework.dll
+C:\Users\Nacho\Documents\Pizzeria\Sotfware pizza\Pizzeria\DTO\bin\Debug\MySql.Data.dll
+C:\Users\Nacho\Documents\Pizzeria\Sotfware pizza\Pizzeria\DTO\bin\Debug\Model.pdb
+C:\Users\Nacho\Documents\Pizzeria\Sotfware pizza\Pizzeria\DTO\bin\Debug\Model.dll.config
+C:\Users\Nacho\Documents\Pizzeria\Sotfware pizza\Pizzeria\DTO\bin\Debug\EntityFramework.xml
+C:\Users\Nacho\Documents\Pizzeria\Sotfware pizza\Pizzeria\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\Nacho\Documents\Pizzeria\Sotfware pizza\Pizzeria\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Nacho\Documents\Pizzeria\Sotfware pizza\Pizzeria\DTO\obj\Debug\DTO.dll
+C:\Users\Nacho\Documents\Pizzeria\Sotfware pizza\Pizzeria\DTO\obj\Debug\DTO.pdb
+C:\Users\Nacho\Documents\Pizzeria\DTO\bin\Debug\DTO.dll.config
+C:\Users\Nacho\Documents\Pizzeria\DTO\bin\Debug\DTO.dll
+C:\Users\Nacho\Documents\Pizzeria\DTO\bin\Debug\DTO.pdb
+C:\Users\Nacho\Documents\Pizzeria\DTO\bin\Debug\Model.dll
+C:\Users\Nacho\Documents\Pizzeria\DTO\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Nacho\Documents\Pizzeria\DTO\bin\Debug\EntityFramework.dll
+C:\Users\Nacho\Documents\Pizzeria\DTO\bin\Debug\MySql.Data.dll
+C:\Users\Nacho\Documents\Pizzeria\DTO\bin\Debug\Model.pdb
+C:\Users\Nacho\Documents\Pizzeria\DTO\bin\Debug\Model.dll.config
+C:\Users\Nacho\Documents\Pizzeria\DTO\bin\Debug\EntityFramework.xml
+C:\Users\Nacho\Documents\Pizzeria\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\Nacho\Documents\Pizzeria\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Nacho\Documents\Pizzeria\DTO\obj\Debug\DTO.dll
+C:\Users\Nacho\Documents\Pizzeria\DTO\obj\Debug\DTO.pdb
+C:\Users\Nacho\Documents\Proyectos\Pizzeria\DTO\bin\Debug\DTO.dll.config
+C:\Users\Nacho\Documents\Proyectos\Pizzeria\DTO\bin\Debug\DTO.dll
+C:\Users\Nacho\Documents\Proyectos\Pizzeria\DTO\bin\Debug\DTO.pdb
+C:\Users\Nacho\Documents\Proyectos\Pizzeria\DTO\bin\Debug\Model.dll
+C:\Users\Nacho\Documents\Proyectos\Pizzeria\DTO\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Nacho\Documents\Proyectos\Pizzeria\DTO\bin\Debug\EntityFramework.dll
+C:\Users\Nacho\Documents\Proyectos\Pizzeria\DTO\bin\Debug\MySql.Data.dll
+C:\Users\Nacho\Documents\Proyectos\Pizzeria\DTO\bin\Debug\Model.pdb
+C:\Users\Nacho\Documents\Proyectos\Pizzeria\DTO\bin\Debug\Model.dll.config
+C:\Users\Nacho\Documents\Proyectos\Pizzeria\DTO\bin\Debug\EntityFramework.xml
+C:\Users\Nacho\Documents\Proyectos\Pizzeria\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\Nacho\Documents\Proyectos\Pizzeria\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Nacho\Documents\Proyectos\Pizzeria\DTO\obj\Debug\DTO.dll
+C:\Users\Nacho\Documents\Proyectos\Pizzeria\DTO\obj\Debug\DTO.pdb
+C:\Users\Nacho\Desktop\Pizzeria\DTO\bin\Debug\DTO.dll.config
+C:\Users\Nacho\Desktop\Pizzeria\DTO\bin\Debug\DTO.dll
+C:\Users\Nacho\Desktop\Pizzeria\DTO\bin\Debug\DTO.pdb
+C:\Users\Nacho\Desktop\Pizzeria\DTO\bin\Debug\Model.dll
+C:\Users\Nacho\Desktop\Pizzeria\DTO\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Nacho\Desktop\Pizzeria\DTO\bin\Debug\EntityFramework.dll
+C:\Users\Nacho\Desktop\Pizzeria\DTO\bin\Debug\MySql.Data.dll
+C:\Users\Nacho\Desktop\Pizzeria\DTO\bin\Debug\Model.pdb
+C:\Users\Nacho\Desktop\Pizzeria\DTO\bin\Debug\Model.dll.config
+C:\Users\Nacho\Desktop\Pizzeria\DTO\bin\Debug\EntityFramework.xml
+C:\Users\Nacho\Desktop\Pizzeria\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\Nacho\Desktop\Pizzeria\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Nacho\Desktop\Pizzeria\DTO\obj\Debug\DTO.dll
+C:\Users\Nacho\Desktop\Pizzeria\DTO\obj\Debug\DTO.pdb
+E:\proyectos web\Pizzeria\DTO\bin\Debug\DTO.dll.config
+E:\proyectos web\Pizzeria\DTO\bin\Debug\DTO.dll
+E:\proyectos web\Pizzeria\DTO\bin\Debug\DTO.pdb
+E:\proyectos web\Pizzeria\DTO\bin\Debug\Model.dll
+E:\proyectos web\Pizzeria\DTO\bin\Debug\MySql.Data.Entity.EF6.dll
+E:\proyectos web\Pizzeria\DTO\bin\Debug\EntityFramework.dll
+E:\proyectos web\Pizzeria\DTO\bin\Debug\MySql.Data.dll
+E:\proyectos web\Pizzeria\DTO\bin\Debug\Model.pdb
+E:\proyectos web\Pizzeria\DTO\bin\Debug\Model.dll.config
+E:\proyectos web\Pizzeria\DTO\bin\Debug\EntityFramework.xml
+E:\proyectos web\Pizzeria\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+E:\proyectos web\Pizzeria\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\proyectos web\Pizzeria\DTO\obj\Debug\DTO.dll
+E:\proyectos web\Pizzeria\DTO\obj\Debug\DTO.pdb
+D:\DE TODO\proyectos web\Pizzeria\DTO\bin\Debug\DTO.dll.config
+D:\DE TODO\proyectos web\Pizzeria\DTO\bin\Debug\DTO.dll
+D:\DE TODO\proyectos web\Pizzeria\DTO\bin\Debug\DTO.pdb
+D:\DE TODO\proyectos web\Pizzeria\DTO\bin\Debug\Model.dll
+D:\DE TODO\proyectos web\Pizzeria\DTO\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\DE TODO\proyectos web\Pizzeria\DTO\bin\Debug\EntityFramework.dll
+D:\DE TODO\proyectos web\Pizzeria\DTO\bin\Debug\MySql.Data.dll
+D:\DE TODO\proyectos web\Pizzeria\DTO\bin\Debug\Model.pdb
+D:\DE TODO\proyectos web\Pizzeria\DTO\bin\Debug\Model.dll.config
+D:\DE TODO\proyectos web\Pizzeria\DTO\bin\Debug\EntityFramework.xml
+D:\DE TODO\proyectos web\Pizzeria\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\DE TODO\proyectos web\Pizzeria\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\DE TODO\proyectos web\Pizzeria\DTO\obj\Debug\DTO.csproj.CopyComplete
+D:\DE TODO\proyectos web\Pizzeria\DTO\obj\Debug\DTO.dll
+D:\DE TODO\proyectos web\Pizzeria\DTO\obj\Debug\DTO.pdb
+D:\DE TODO\proyectos web\Pizzeria\DTO\bin\Debug\BouncyCastle.Crypto.dll
+D:\DE TODO\proyectos web\Pizzeria\DTO\bin\Debug\Google.Protobuf.dll
+D:\DE TODO\proyectos web\Pizzeria\DTO\bin\Debug\K4os.Compression.LZ4.dll
+D:\DE TODO\proyectos web\Pizzeria\DTO\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\DE TODO\proyectos web\Pizzeria\DTO\bin\Debug\K4os.Hash.xxHash.dll
+D:\DE TODO\proyectos web\Pizzeria\DTO\bin\Debug\System.Buffers.dll
+D:\DE TODO\proyectos web\Pizzeria\DTO\bin\Debug\System.Memory.dll
+D:\DE TODO\proyectos web\Pizzeria\DTO\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\DE TODO\proyectos web\Pizzeria\DTO\bin\Debug\Google.Protobuf.pdb
+D:\DE TODO\proyectos web\Pizzeria\DTO\bin\Debug\Google.Protobuf.xml
+D:\DE TODO\proyectos web\Pizzeria\DTO\bin\Debug\K4os.Compression.LZ4.xml
+D:\DE TODO\proyectos web\Pizzeria\DTO\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\DE TODO\proyectos web\Pizzeria\DTO\bin\Debug\K4os.Hash.xxHash.xml
+D:\DE TODO\proyectos web\Pizzeria\DTO\bin\Debug\System.Buffers.xml
+D:\DE TODO\proyectos web\Pizzeria\DTO\bin\Debug\System.Memory.xml
+D:\DE TODO\proyectos web\Pizzeria\DTO\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\bin\Debug\DTO.dll.config
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\bin\Debug\DTO.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\bin\Debug\DTO.pdb
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\bin\Debug\Google.Protobuf.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\bin\Debug\Model.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\bin\Debug\MySql.Data.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\bin\Debug\System.Buffers.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\bin\Debug\System.Memory.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\bin\Debug\EntityFramework.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\bin\Debug\Model.pdb
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\bin\Debug\Model.dll.config
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\bin\Debug\Google.Protobuf.pdb
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\bin\Debug\Google.Protobuf.xml
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\bin\Debug\System.Buffers.xml
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\bin\Debug\System.Memory.xml
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\bin\Debug\EntityFramework.xml
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\obj\Debug\DTO.dll
+C:\Users\Nacho\Desktop\SOFTWARE DE COMIDA\Pizzeria\DTO\obj\Debug\DTO.pdb
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\bin\Debug\DTO.dll.config
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\bin\Debug\DTO.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\bin\Debug\DTO.pdb
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\bin\Debug\Google.Protobuf.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\bin\Debug\Model.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\bin\Debug\MySql.Data.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\bin\Debug\System.Buffers.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\bin\Debug\System.Memory.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\bin\Debug\EntityFramework.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\bin\Debug\Model.pdb
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\bin\Debug\Model.dll.config
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\bin\Debug\Google.Protobuf.pdb
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\bin\Debug\Google.Protobuf.xml
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\bin\Debug\System.Buffers.xml
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\bin\Debug\System.Memory.xml
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\bin\Debug\EntityFramework.xml
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\obj\Debug\DTO.dll
+C:\Users\Nacho\Desktop\PRO FERRETERIA\Pizzeria\DTO\obj\Debug\DTO.pdb
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\bin\Debug\DTO.dll.config
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\bin\Debug\DTO.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\bin\Debug\DTO.pdb
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\bin\Debug\Google.Protobuf.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\bin\Debug\Model.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\bin\Debug\MySql.Data.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\bin\Debug\System.Buffers.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\bin\Debug\System.Memory.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\bin\Debug\EntityFramework.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\bin\Debug\Model.pdb
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\bin\Debug\Model.dll.config
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\bin\Debug\Google.Protobuf.pdb
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\bin\Debug\Google.Protobuf.xml
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\bin\Debug\System.Buffers.xml
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\bin\Debug\System.Memory.xml
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\bin\Debug\EntityFramework.xml
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\obj\Debug\DTO.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Pizzeria\DTO\obj\Debug\DTO.pdb
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\DTO.dll.config
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\DTO.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\DTO.pdb
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\Google.Protobuf.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\Model.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\MySql.Data.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\System.Buffers.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\System.Memory.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\EntityFramework.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\Model.pdb
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\Model.dll.config
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\Google.Protobuf.pdb
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\Google.Protobuf.xml
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\System.Buffers.xml
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\System.Memory.xml
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\EntityFramework.xml
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\obj\Debug\DTO.dll
+C:\Users\Nacho\Desktop\PROYECTO FERRETERIA\Erp\DTO\obj\Debug\DTO.pdb
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\DTO.dll.config
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\DTO.dll
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\DTO.pdb
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\Google.Protobuf.dll
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\Model.dll
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\MySql.Data.dll
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\System.Buffers.dll
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\System.Memory.dll
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\EntityFramework.dll
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\Model.pdb
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\Model.dll.config
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\Google.Protobuf.pdb
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\Google.Protobuf.xml
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\System.Buffers.xml
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\System.Memory.xml
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\bin\Debug\EntityFramework.xml
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\obj\Debug\DTO.dll
+C:\Users\Nacho\Desktop\SAN_ALFONOSO_SOFT\PROYECTO FERRETERIA\Erp\DTO\obj\Debug\DTO.pdb
+C:\Users\josediazramirez\source\repos\Erp\DTO\bin\Debug\DTO.dll.config
+C:\Users\josediazramirez\source\repos\Erp\DTO\bin\Debug\DTO.dll
+C:\Users\josediazramirez\source\repos\Erp\DTO\bin\Debug\DTO.pdb
+C:\Users\josediazramirez\source\repos\Erp\DTO\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\josediazramirez\source\repos\Erp\DTO\bin\Debug\Google.Protobuf.dll
+C:\Users\josediazramirez\source\repos\Erp\DTO\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\josediazramirez\source\repos\Erp\DTO\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\josediazramirez\source\repos\Erp\DTO\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\josediazramirez\source\repos\Erp\DTO\bin\Debug\Model.dll
+C:\Users\josediazramirez\source\repos\Erp\DTO\bin\Debug\MySql.Data.dll
+C:\Users\josediazramirez\source\repos\Erp\DTO\bin\Debug\System.Buffers.dll
+C:\Users\josediazramirez\source\repos\Erp\DTO\bin\Debug\System.Memory.dll
+C:\Users\josediazramirez\source\repos\Erp\DTO\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\josediazramirez\source\repos\Erp\DTO\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\josediazramirez\source\repos\Erp\DTO\bin\Debug\EntityFramework.dll
+C:\Users\josediazramirez\source\repos\Erp\DTO\bin\Debug\Model.pdb
+C:\Users\josediazramirez\source\repos\Erp\DTO\bin\Debug\Model.dll.config
+C:\Users\josediazramirez\source\repos\Erp\DTO\bin\Debug\Google.Protobuf.pdb
+C:\Users\josediazramirez\source\repos\Erp\DTO\bin\Debug\Google.Protobuf.xml
+C:\Users\josediazramirez\source\repos\Erp\DTO\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\josediazramirez\source\repos\Erp\DTO\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\josediazramirez\source\repos\Erp\DTO\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\josediazramirez\source\repos\Erp\DTO\bin\Debug\System.Buffers.xml
+C:\Users\josediazramirez\source\repos\Erp\DTO\bin\Debug\System.Memory.xml
+C:\Users\josediazramirez\source\repos\Erp\DTO\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\josediazramirez\source\repos\Erp\DTO\bin\Debug\EntityFramework.xml
+C:\Users\josediazramirez\source\repos\Erp\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\josediazramirez\source\repos\Erp\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\josediazramirez\source\repos\Erp\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\josediazramirez\source\repos\Erp\DTO\obj\Debug\DTO.dll
+C:\Users\josediazramirez\source\repos\Erp\DTO\obj\Debug\DTO.pdb
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\bin\Debug\DTO.dll.config
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\bin\Debug\DTO.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\bin\Debug\DTO.pdb
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\bin\Debug\Google.Protobuf.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\bin\Debug\Model.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\bin\Debug\MySql.Data.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\bin\Debug\System.Buffers.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\bin\Debug\System.Memory.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\bin\Debug\EntityFramework.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\bin\Debug\Model.pdb
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\bin\Debug\Model.dll.config
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\bin\Debug\Google.Protobuf.pdb
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\bin\Debug\Google.Protobuf.xml
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\bin\Debug\System.Buffers.xml
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\bin\Debug\System.Memory.xml
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\bin\Debug\EntityFramework.xml
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\obj\Debug\DTO.dll
+C:\Users\jose.diaz\Documents\cosas\Erp\DTO\obj\Debug\DTO.pdb
+D:\cosas\Erp\DTO\bin\Debug\DTO.dll.config
+D:\cosas\Erp\DTO\bin\Debug\DTO.dll
+D:\cosas\Erp\DTO\bin\Debug\DTO.pdb
+D:\cosas\Erp\DTO\bin\Debug\BouncyCastle.Crypto.dll
+D:\cosas\Erp\DTO\bin\Debug\Google.Protobuf.dll
+D:\cosas\Erp\DTO\bin\Debug\K4os.Compression.LZ4.dll
+D:\cosas\Erp\DTO\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\cosas\Erp\DTO\bin\Debug\K4os.Hash.xxHash.dll
+D:\cosas\Erp\DTO\bin\Debug\Model.dll
+D:\cosas\Erp\DTO\bin\Debug\MySql.Data.dll
+D:\cosas\Erp\DTO\bin\Debug\System.Buffers.dll
+D:\cosas\Erp\DTO\bin\Debug\System.Memory.dll
+D:\cosas\Erp\DTO\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\cosas\Erp\DTO\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\cosas\Erp\DTO\bin\Debug\EntityFramework.dll
+D:\cosas\Erp\DTO\bin\Debug\Model.pdb
+D:\cosas\Erp\DTO\bin\Debug\Model.dll.config
+D:\cosas\Erp\DTO\bin\Debug\Google.Protobuf.pdb
+D:\cosas\Erp\DTO\bin\Debug\Google.Protobuf.xml
+D:\cosas\Erp\DTO\bin\Debug\K4os.Compression.LZ4.xml
+D:\cosas\Erp\DTO\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\cosas\Erp\DTO\bin\Debug\K4os.Hash.xxHash.xml
+D:\cosas\Erp\DTO\bin\Debug\System.Buffers.xml
+D:\cosas\Erp\DTO\bin\Debug\System.Memory.xml
+D:\cosas\Erp\DTO\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\cosas\Erp\DTO\bin\Debug\EntityFramework.xml
+D:\cosas\Erp\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\cosas\Erp\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\cosas\Erp\DTO\obj\Debug\DTO.csproj.CopyComplete
+D:\cosas\Erp\DTO\obj\Debug\DTO.dll
+D:\cosas\Erp\DTO\obj\Debug\DTO.pdb
+\\Mac\Home\Downloads\Erp\DTO\bin\Debug\DTO.dll.config
+\\Mac\Home\Downloads\Erp\DTO\bin\Debug\DTO.dll
+\\Mac\Home\Downloads\Erp\DTO\bin\Debug\DTO.pdb
+\\Mac\Home\Downloads\Erp\DTO\bin\Debug\BouncyCastle.Crypto.dll
+\\Mac\Home\Downloads\Erp\DTO\bin\Debug\Google.Protobuf.dll
+\\Mac\Home\Downloads\Erp\DTO\bin\Debug\K4os.Compression.LZ4.dll
+\\Mac\Home\Downloads\Erp\DTO\bin\Debug\K4os.Compression.LZ4.Streams.dll
+\\Mac\Home\Downloads\Erp\DTO\bin\Debug\K4os.Hash.xxHash.dll
+\\Mac\Home\Downloads\Erp\DTO\bin\Debug\Model.dll
+\\Mac\Home\Downloads\Erp\DTO\bin\Debug\MySql.Data.dll
+\\Mac\Home\Downloads\Erp\DTO\bin\Debug\System.Buffers.dll
+\\Mac\Home\Downloads\Erp\DTO\bin\Debug\System.Memory.dll
+\\Mac\Home\Downloads\Erp\DTO\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+\\Mac\Home\Downloads\Erp\DTO\bin\Debug\MySql.Data.Entity.EF6.dll
+\\Mac\Home\Downloads\Erp\DTO\bin\Debug\EntityFramework.dll
+\\Mac\Home\Downloads\Erp\DTO\bin\Debug\Model.pdb
+\\Mac\Home\Downloads\Erp\DTO\bin\Debug\Model.dll.config
+\\Mac\Home\Downloads\Erp\DTO\bin\Debug\Google.Protobuf.pdb
+\\Mac\Home\Downloads\Erp\DTO\bin\Debug\Google.Protobuf.xml
+\\Mac\Home\Downloads\Erp\DTO\bin\Debug\K4os.Compression.LZ4.xml
+\\Mac\Home\Downloads\Erp\DTO\bin\Debug\K4os.Compression.LZ4.Streams.xml
+\\Mac\Home\Downloads\Erp\DTO\bin\Debug\K4os.Hash.xxHash.xml
+\\Mac\Home\Downloads\Erp\DTO\bin\Debug\System.Buffers.xml
+\\Mac\Home\Downloads\Erp\DTO\bin\Debug\System.Memory.xml
+\\Mac\Home\Downloads\Erp\DTO\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+\\Mac\Home\Downloads\Erp\DTO\bin\Debug\EntityFramework.xml
+\\Mac\Home\Downloads\Erp\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+\\Mac\Home\Downloads\Erp\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+\\Mac\Home\Downloads\Erp\DTO\obj\Debug\DTO.csproj.CopyComplete
+\\Mac\Home\Downloads\Erp\DTO\obj\Debug\DTO.dll
+\\Mac\Home\Downloads\Erp\DTO\obj\Debug\DTO.pdb

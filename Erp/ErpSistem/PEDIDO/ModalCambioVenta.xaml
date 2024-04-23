@@ -1,0 +1,288 @@
+﻿<Controls:MetroWindow x:Class="ErpClass.ModalCamVen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:ErpClass"
+        mc:Ignorable="d"  >
+    
+    <Grid Background="#E9E9E9">
+        <Grid Margin="0,10,10,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.11*"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Image  Grid.Column="1"
+                Grid.Row="0" Source="/Recursos/codigo.png" Height="40" Width="65" HorizontalAlignment="Left"/>
+            <TextBox x:Name="txt_buscar_codigo"
+                     HorizontalAlignment="Left"
+                Foreground="Black"
+                Background="#FFF6F7F9" 
+                FontSize="20" 
+                FontFamily="Arial" 
+                FontWeight="Bold"
+                KeyUp="txt_buscar_code_KeyUp"
+                Grid.Column="1"
+                Grid.Row="0"
+                     Margin="50,0,0,0"
+                     Width="200"
+                     Height="35"
+                />
+            <Image  Grid.Column="1"
+                Grid.Row="0" Source="/Recursos/buscar.png" Height="35" Width="65"/>
+            <TextBox x:Name="txt_buscar" 
+                     HorizontalAlignment="Right"
+                     Height="35"
+                     Width="300"
+                     Foreground="Black"
+                     Background="#FFF6F7F9" 
+                     FontSize="20" 
+                     FontFamily="Arial" 
+                     FontWeight="Bold"
+                     KeyUp="txt_buscar_KeyUp" 
+                     Grid.Column="1"
+                     Grid.Row="0">
+            </TextBox>
+            <DataGrid x:Name="dgi_producto" AutoGenerateColumns="False" 
+                  Width="auto"
+                  Height="auto"
+                  SelectionMode="Single" 
+                  IsReadOnly="True"
+                     FontSize="14"
+                      FontWeight="Bold"
+                  RowDetailsVisibilityMode="Visible"
+                      Margin="0,0,0,20"
+                      Grid.Column="1"
+                      Grid.RowSpan="2"
+                                           Grid.Row="1"
+                      >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Visibility="Hidden" Binding="{Binding idinventario}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="SKU" Binding="{Binding codigo}"/>
+
+                    <DataGridTextColumn Header="Producto"  Binding="{Binding producto}" Width="250"/>
+                    <DataGridTextColumn Header="Marca"  Binding="{Binding marca}" Width="80"/>
+                    <DataGridTextColumn Header="Precio" Binding="{Binding precio, StringFormat={}$ {0:N0}}"  Width="100" >
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="HorizontalAlignment" Value="Right" />
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Centro" Binding="{Binding centro}" Width="80">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="HorizontalAlignment" Value="Right"></Setter>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="STOCK" Binding="{Binding stock}">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="HorizontalAlignment" Value="Right"></Setter>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTemplateColumn CanUserResize="False" Width="80" >
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button x:Name="btn_pedido" Width="70" Content="AGREGAR" Click="btn_pedido_Click" FontSize="12"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <DataGrid x:Name="dgi_detalles" 
+                      
+                      AutoGenerateColumns="False" 
+                      SelectionMode="Single" 
+                      IsReadOnly="True" 
+                      RowDetailsVisibilityMode="Visible"
+                      Grid.Column="2"
+                      Margin="10,0,10,135"
+                      Grid.Row="1"
+                       FontSize="14"
+                      FontWeight="Bold"
+                      >
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn CanUserResize="False" Width="40" >
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button x:Name="btn_delete" Background="Transparent" HorizontalAlignment="Center" Click="btn_delete" FontSize="12">
+                                    <Image Source="/Recursos/cancelar.ico" Height="20" />
+                                </Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn CanUserResize="False" Width="35">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button x:Name="btn_menos" Background="Transparent" Click="btn_menos_Click" >
+                                    <Image Source="/Recursos/menos.png" Height="20" />
+                                </Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn CanUserResize="False" Width="35">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button x:Name="btn_mas" Background="Transparent" Click="btn_mas_Click">
+                                    <Image Source="/Recursos/add.png" Height="20" />
+                                </Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn Binding="{Binding codigo}" Visibility="Hidden"/>
+                    <DataGridTextColumn Header="Producto"  Binding="{Binding producto}" Width="280"/>
+                    <DataGridTextColumn Header="Centro"  Binding="{Binding centro}" Width="80"/>
+                    <DataGridTextColumn Header="Precio" Binding="{Binding precio, StringFormat=$ \{0:N0\}}"  Width="80" >
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="HorizontalAlignment" Value="Right" />
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Cant" Binding="{Binding Cantidad}" Width="60">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="HorizontalAlignment" Value="Right" />
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Total" Binding="{Binding total, StringFormat=$ \{0:N0\}}" Width="80"  >
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="HorizontalAlignment" Value="Right" />
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <StackPanel  
+
+              VerticalAlignment="Top"
+                Background="#34495E"
+             Margin="10,-130,10,20"
+                         Grid.Column="2" 
+                       
+                         Grid.Row="2">
+                <Grid Margin="10,0,0,0" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="130*"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="140*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition ></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Content="LUGAR DE VENTA" Grid.Row="0" Foreground="White" FontSize="20" FontWeight="Bold"></Label>
+                    <Label Content="INFORMACIÓN CLIENTE" Background="#3498DB" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" Foreground="White" FontSize="20" FontWeight="Bold"></Label>
+                    <RadioButton Name="ventalocal" GroupName="entrega" 
+                                 Grid.Row="2"
+                            Foreground="White" FontSize="14"
+                                     Content="VENTA LOCAL" 
+                                     FontWeight="Bold"  >
+                        <RadioButton.RenderTransform>
+                            <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                        </RadioButton.RenderTransform>
+                    </RadioButton>
+                    <RadioButton Name="retiro" GroupName="entrega" 
+                                 Grid.Row="3"
+                                Foreground="White" FontSize="14"
+                                     Content="RETIRO EN 48HR" 
+                                     FontWeight="Bold">
+                        <RadioButton.RenderTransform>
+                            <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                        </RadioButton.RenderTransform>
+                    </RadioButton>
+                    <RadioButton Name="despacho" GroupName="entrega" 
+                                Foreground="White" FontSize="14"
+                                 Grid.Row="1"
+                                 Grid.Column="0"
+                                     Content="DESPACHO" 
+                                     FontWeight="Bold" 
+                                       >
+                        <RadioButton.RenderTransform>
+                            <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                        </RadioButton.RenderTransform>
+                    </RadioButton>
+                    <Label x:Name="lb_nombre"  FontSize="18" Foreground="White" HorizontalAlignment="Left" FontWeight="Bold" Content="NOMBRE" Grid.Column="2" Grid.Row="1"></Label>
+                    <Label x:Name="lb_telefono" FontSize="18" Foreground="White" HorizontalAlignment="Left" FontWeight="Bold" Content="TELEFONO" Grid.Column="2" Grid.Row="2"></Label>
+                    <Label x:Name="lb_telefono_opc" FontSize="18" Foreground="White" HorizontalAlignment="Left" FontWeight="Bold" Content="TELEFONO 2" Grid.Column="2" Grid.Row="3"></Label>
+                    <Label x:Name="lb_direccion" FontSize="18" Foreground="White" HorizontalAlignment="Left" FontWeight="Bold" Content="DIRECCIÓN" Grid.Column="2" Grid.Row="4"></Label>
+                    <Label x:Name="lb_flete" FontSize="18" Foreground="White" HorizontalAlignment="Left" FontWeight="Bold" Content="TRANSPORTE" Grid.Column="2" Grid.Row="5"></Label>
+
+                    <TextBox x:Name="tb_nombre"  FontWeight="Bold" FontSize="16" Grid.Column="3" Grid.Row="1" Margin="5"></TextBox>
+                    <TextBox x:Name="tb_telefono" MaxLength="9" FontWeight="Bold" FontSize="16" Grid.Column="3" Grid.Row="2" Margin="5"></TextBox>
+                    <TextBox x:Name="tb_telefono_opc" MaxLength="9" FontWeight="Bold" FontSize="16" Grid.Column="3" Grid.Row="3" Margin="5"></TextBox>
+                    <TextBox x:Name="tb_direccion" TextWrapping="Wrap" AcceptsReturn="True"  FontWeight="Bold" FontSize="16" Grid.Column="3" Grid.Row="4" Margin="5"></TextBox>
+                    <ComboBox x:Name="cbx_flete" DisplayMemberPath="nombre" SelectedIndex="0" SelectedValuePath="codigo" FontWeight="Bold" FontSize="16" Grid.Column="3" Grid.Row="5" Margin="5"></ComboBox>
+                </Grid>
+                <Grid Margin="0,0,0,0" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200*"></ColumnDefinition>
+                        <ColumnDefinition Width="200*"/>
+                        <ColumnDefinition Width="354*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition Height="80"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="60"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <StackPanel  x:Name="proceso_cambio" Orientation="Vertical" Grid.Row="0"  Grid.ColumnSpan="3">
+                        <Label Content="PROCESO DE CAMBIO" FontSize="20" FontWeight="Bold" Foreground="White"/>
+                        <Label x:Name="lb_saldo_devo" Content="$" FontSize="20" FontWeight="Bold" Foreground="White"/>
+                        <Label x:Name="lb_saldo_diferencia" Content="$" FontSize="20" FontWeight="Bold" Foreground="White"/>
+                    </StackPanel>
+                    <Label x:Name="lb_total" VerticalAlignment="Top" Background="#3498DB" VerticalContentAlignment="Center" Content="TOTAL" 
+                       FontSize="30"  Foreground="White"
+                       FontWeight="Bold" Grid.Row="2" Grid.ColumnSpan="3" />
+
+                    <Button 
+
+                        x:Name="btn_canl_cam"
+                        Content="CANCELAR CAMBIO"  
+                        FontSize="20"
+                            Click="btn_canl_cam_Click"
+                            Width="300"
+                            Height="50"
+                            HorizontalAlignment="Right"
+                      
+                            Grid.Row="4"
+                            Grid.ColumnSpan="2"
+                          
+                        Margin="5"/>
+
+                    <Button x:Name="btn_pedido"
+                        Content="Realizar cambio"  
+                        FontSize="20" 
+                            Height="50"
+                            Width="300"
+                            Margin="5"
+                            HorizontalAlignment="Right"
+                        Click="realizarComanda_Click"
+                            Grid.Row="8"
+                            Grid.Column="3"/>
+                </Grid>
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+</Controls:MetroWindow>
