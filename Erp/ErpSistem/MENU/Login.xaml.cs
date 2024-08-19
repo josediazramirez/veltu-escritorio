@@ -5,7 +5,9 @@ using Model;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Deployment.Application;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -30,6 +32,15 @@ namespace ErpClass
         public Login()
         {
             InitializeComponent();
+
+            string versionString = "V1.0"; // Valor por defecto
+
+            if (ApplicationDeployment.IsNetworkDeployed)
+            {
+                var version = ApplicationDeployment.CurrentDeployment.CurrentVersion;
+                versionString = $"V{version.Major}.{version.Minor}.{version.Build}.{version.Revision}";
+            }
+            MyVersionLabel.Content = $"{versionString}";
         }
         private void trueLoading()
         {

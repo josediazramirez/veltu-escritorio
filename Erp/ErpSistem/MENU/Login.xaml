@@ -18,7 +18,7 @@
                 <Button x:Name="btn_salir" Background="#D92929" Foreground="White"  Content="SALIR" Margin="20" Width="150" FontSize="20" FontFamily="Arial Rounded MT" FontWeight="Bold"  Height="40"  Click="btn_salir_Click" />
                 <Button x:Name="btn_entrar" Background="#4262FF" Foreground="White"  Content="ENTRAR" Margin="20" Width="150" FontSize="20" FontFamily="Arial Rounded MT" FontWeight="Bold"  Height="40"  Click="btn_entrar_Click" />
             </StackPanel>
-            <Label FontStretch="Expanded">V1.2</Label>
+            <Label x:Name="MyVersionLabel" FontStretch="Expanded">V1.2</Label>
         </StackPanel>
     </Grid>
 </Page>

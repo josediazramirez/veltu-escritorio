@@ -10,8 +10,6 @@ obj/
 # Archivos de caché y logs
 [Tt]humbs.db
 [Tt]est[Rr]esult*/
-[Oo]bj/
-[Bb]in/
 [Ll]og/
 *.log
 *.log.*
@@ -21,7 +19,6 @@ obj/
 packages/
 
 # Archivos temporales de compilación
-*.log
 *.exe
 *.dll
 *.pdb
@@ -38,23 +35,14 @@ packages/
 *.bak
 *.cache
 *.ilk
-*.log
-*.libs
+*.lib
+*.obj
 *.sbr
 *.sdf
-*.lib
-*.suo
-*.pdb
 *.idb
 *.ipch
-*.bak
-*.cache
-*.obj
-*.ilk
-*.log
 *.tmp
 *.tmp_proj
-*.log
 *.jfm
 *.gpState
 
@@ -63,3 +51,21 @@ _ReSharper*/
 [Tt]est[Rr]esult*/
 *.VisualState.xml
 *.csproj.user
+
+# Archivos específicos de WPF
+Generated_Code/
+*.g.*
+*.g.i.*
+*.resources
+*.resource
+*.xaml.cs.cache
+
+# Archivos específicos de diseño en WPF
+*.designer.cs
+
+# Archivos de configuración local de usuario
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
