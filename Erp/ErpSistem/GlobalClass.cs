@@ -5,6 +5,7 @@ namespace ErpClass
 {
     public class GlobalClass
     {
+        //idpedido,nombre,pro_codigo,categoria,total,telefono,direccion,estado,observacion,cliente,tamanio,fecha
         public static int idpedido { get; set; }
         public static string nombre { get; set; }
         public static int pro_codigo { get; set; }

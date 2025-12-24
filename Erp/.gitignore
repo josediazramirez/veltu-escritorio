@@ -5,6 +5,8 @@
 *.userosscache
 *.sln.docstates
 
+Erp/Controller/bin/
+
 # Carpetas de compilación
 bin/
 obj/
