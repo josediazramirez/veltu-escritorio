@@ -29,6 +29,8 @@ namespace Model
         public int? idmarca { get; set; }
         public int? idcolor { get; set; }
         public string ean_codigo { get; set; }
+        public string descripcion { get; set; }
+        public string lote { get; set; }
 
     }
 

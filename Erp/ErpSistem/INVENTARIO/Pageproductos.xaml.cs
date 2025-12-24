@@ -137,6 +137,8 @@ namespace ErpClass
                 productoDTO producto = new productoDTO();
                 producto.codigo = int.Parse(codigo.Text);
                 producto.nombre = tb_nombre.Text.ToUpper();
+                producto.descripcion = tb_descripcion.Text;
+                producto.lote = tb_lote.Text;
                 if (string.IsNullOrEmpty(tb_ean.Text) == false)
                 {
                     producto.ean = tb_ean.Text;
@@ -279,6 +281,8 @@ namespace ErpClass
         {
             tb_nombre.Clear();
             tb_precio.Clear();
+            tb_descripcion.Clear();
+            tb_lote.Clear();
            
             validar_nombre.Content = "";
             validar_categoria.Content = "";
@@ -296,7 +300,8 @@ namespace ErpClass
 
             tb_precio.IsEnabled = true;
             tb_precio.Text = producto.precio.ToString();
-
+            tb_descripcion.Text = producto.descripcion;
+            tb_lote.Text = producto.lote;
             if (producto.idmarca != null)
             {
                 cbx_marca.SelectedValue = producto.idmarca;
@@ -319,6 +324,8 @@ namespace ErpClass
             tb_nombre.Clear();
             tb_precio.Clear();
             tb_precio_costo.Clear();
+            tb_descripcion.Clear();
+            tb_lote.Clear();
             cbx_categoria.SelectedIndex = 0;
             validar_nombre.Content = "";
             validar_categoria.Content = "";

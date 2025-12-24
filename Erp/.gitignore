@@ -1,0 +1,54 @@
+# Archivos de usuario de Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Carpetas de compilación
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+# Archivos de configuración temporales
+*.cache
+*.dbmdl
+*.bak
+*.log
+
+# Publicación ClickOnce
+publish/
+app.publish/
+
+# Archivos de paquetes NuGet
+*.nupkg
+*.snupkg
+packages/
+*.nuget.props
+*.nuget.targets
+
+# Configuración de Rider/Resharper
+.idea/
+*.DotSettings.user
+
+# Archivos de test y cobertura
+TestResults/
+*.coverage
+*.coveragexml
+
+# Archivos de sistema
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Archivos de OneDrive/Windows
+*.vsidx
+*.vssscc
+*.vshost.*

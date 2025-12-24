@@ -28,7 +28,8 @@ namespace DTO
         public int idmedida { get; set; }
         public int? estado { get; set; }
         public int autorizacion  { get; set; }
-
+        public string descripcion { get; set; }
+        public string lote { get; set; }
     }
 
 }

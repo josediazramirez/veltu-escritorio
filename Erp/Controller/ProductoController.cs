@@ -128,7 +128,9 @@ namespace Controller
                         idcolor = col.idcolor,
                         ean  = pro.ean_codigo,
                         precio_costo = pro.precio_costo,
-                        estado = pro.estado
+                        estado = pro.estado,
+                        descripcion = pro.descripcion,
+                        lote = pro.lote
                          }).ToList();
                 }
                 else
@@ -159,7 +161,9 @@ namespace Controller
                          idcolor = col.idcolor,
                          ean = pro.ean_codigo,
                          precio_costo = pro.precio_costo,
-                         estado = pro.estado
+                         estado = pro.estado,
+                         descripcion = pro.descripcion,
+                         lote = pro.lote
                      }).ToList();
                 }
 
@@ -294,8 +298,8 @@ namespace Controller
                 pro.ean_codigo = producto.ean;
                 pro.estado = 1;
                 pro.precio_costo = producto.precio_costo;
-
-
+                pro.descripcion = producto.descripcion;
+                pro.lote = producto.lote;
 
                 insert = db.Producto.FirstOrDefault(x => x.nombre == producto.nombre 
                 && x.idmarca==producto.idmarca && x.idcolor == producto.idcolor) != null ? 1 : 0;
@@ -405,6 +409,8 @@ namespace Controller
             producto.idcolor = pro.idcolor;
             producto.idmarca = pro.idmarca;
             producto.precio_costo = pro.precio_costo;
+            producto.descripcion = pro.descripcion;
+            producto.lote = pro.lote;
 
             var inv = db.inventario.FirstOrDefault(x => x.idproducto == producto.codigo);
             if (inv == null)

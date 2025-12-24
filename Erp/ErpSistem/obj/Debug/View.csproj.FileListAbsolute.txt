@@ -144,3 +144,295 @@ C:\Users\josediazramirez\Source\Repos\erp\Erp\ErpSistem\obj\Debug\ErpAdmin.appli
 C:\Users\josediazramirez\Source\Repos\erp\Erp\ErpSistem\obj\Debug\View.csproj.CopyComplete
 C:\Users\josediazramirez\Source\Repos\erp\Erp\ErpSistem\obj\Debug\ErpAdmin.exe
 C:\Users\josediazramirez\Source\Repos\erp\Erp\ErpSistem\obj\Debug\ErpAdmin.pdb
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\ErpAdmin.exe.config
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\ErpAdmin.exe.manifest
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\ErpAdmin.application
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\ErpAdmin.exe
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\ErpAdmin.pdb
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\BouncyCastle.Crypto.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\Controller.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\ControlzEx.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\Devart.Data.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\DTO.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\EntityFramework.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\EntityFramework.SqlServer.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\FontAwesome.WPF.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\Google.Protobuf.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\K4os.Compression.LZ4.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\K4os.Hash.xxHash.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\LiveCharts.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\LiveCharts.Wpf.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\MahApps.Metro.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\Microsoft.Extensions.PlatformAbstractions.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\Microsoft.Win32.Registry.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\Microsoft.Xaml.Behaviors.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\Model.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\MySql.Data.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\System.Buffers.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\System.Memory.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\System.Reflection.TypeExtensions.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\System.Windows.Interactivity.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\zxing.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\zxing.presentation.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\Controller.pdb
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\Controller.dll.config
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\DTO.pdb
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\DTO.dll.config
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\Model.pdb
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\Model.dll.config
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\ControlzEx.pdb
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\EntityFramework.xml
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\EntityFramework.SqlServer.xml
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\FontAwesome.WPF.xml
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\Google.Protobuf.pdb
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\Google.Protobuf.xml
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\K4os.Compression.LZ4.xml
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\K4os.Hash.xxHash.xml
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\LiveCharts.pdb
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\LiveCharts.xml
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\LiveCharts.Wpf.pdb
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\LiveCharts.Wpf.xml
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\MahApps.Metro.pdb
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\MahApps.Metro.xml
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\Microsoft.Extensions.PlatformAbstractions.xml
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\Microsoft.Xaml.Behaviors.xml
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\System.Buffers.xml
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\System.Memory.xml
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\zxing.xml
+D:\MIS COSAS\Erp\ErpSistem\bin\Debug\zxing.presentation.xml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\View.csproj.AssemblyReference.cache
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\View.csproj.SuggestedBindingRedirects.cache
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\ErpAdmin.exe.config
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\AutoCompleteTextBox.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\MENU\Login.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\MENU\Home.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\AutoCompleteTextBox.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\CAJA\pagecajadia.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\BuscarAtencion.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\INVENTARIO\ModuloBodega.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\PRODUCTO\ModuloCategoria.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\INVENTARIO\ModalCantidad.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\INVENTARIO\ModalProductos.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\MENU\Login.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\MENU\Menu.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\MENU\Home.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\HabilitarProceso.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\ModalItem.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\ModalMensaje.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\PEDIDO\ModalCanalVenta.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\PEDIDO\ModalCambioVenta.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\MENU\ModalPc.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\CAJA\ModalAperturaCaja.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\PEDIDO\ModalCantidad.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\REPORT_VENTA\pagefactura.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\REPORT_VENTA\reporteventa.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\USUARIOS\ModuloUser.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\VENTA\ModalFactura.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\VENTA\ModalVenta.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\PEDIDO\modal_cant_devol.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\VENTA\ModalDevolucion.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\CAJA\Pagecaja.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\PEDIDO\pageclientes.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\REPORT_VENTA\pageventadeldia.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\PEDIDO\modal_cambio.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\PEDIDO\Pagenotaventa.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\VENTA\Pagepedido.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\INVENTARIO\Pageproductos.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\App.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\ErpAdmin_Content.g.cs
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\ErpAdmin_MarkupCompile.cache
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\ErpAdmin_MarkupCompile.lref
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\CAJA\pagecajadia.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\BuscarAtencion.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\INVENTARIO\ModuloBodega.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\PRODUCTO\ModuloCategoria.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\INVENTARIO\ModalCantidad.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\INVENTARIO\ModalProductos.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\MENU\Menu.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\HabilitarProceso.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\ModalItem.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\ModalMensaje.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\PEDIDO\ModalCanalVenta.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\PEDIDO\ModalCambioVenta.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\MENU\ModalPc.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\CAJA\ModalAperturaCaja.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\PEDIDO\ModalCantidad.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\REPORT_VENTA\pagefactura.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\REPORT_VENTA\reporteventa.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\USUARIOS\ModuloUser.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\VENTA\ModalFactura.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\VENTA\ModalVenta.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\PEDIDO\modal_cant_devol.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\VENTA\ModalDevolucion.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\CAJA\Pagecaja.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\PEDIDO\pageclientes.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\REPORT_VENTA\pageventadeldia.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\PEDIDO\modal_cambio.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\PEDIDO\Pagenotaventa.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\VENTA\Pagepedido.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\INVENTARIO\Pageproductos.baml
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\ErpAdmin.g.resources
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\ErpAdmin.Properties.Resources.resources
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\View.csproj.GenerateResource.cache
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\View.csproj.CoreCompileInputs.cache
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\ErpAdmin.exe.manifest
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\ErpAdmin.application
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\View.csproj.Up2Date
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\ErpAdmin.exe
+D:\MIS COSAS\Erp\ErpSistem\obj\Debug\ErpAdmin.pdb
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\ErpAdmin.exe.config
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\ErpAdmin.exe.manifest
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\ErpAdmin.application
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\ErpAdmin.exe
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\ErpAdmin.pdb
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\Controller.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\ControlzEx.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\Devart.Data.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\DTO.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\EntityFramework.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\FontAwesome.WPF.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\Google.Protobuf.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\LiveCharts.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\MahApps.Metro.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\Microsoft.Extensions.PlatformAbstractions.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\Model.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\MySql.Data.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\System.Buffers.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\System.Memory.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\System.Reflection.TypeExtensions.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\zxing.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\zxing.presentation.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\Controller.pdb
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\Controller.dll.config
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\DTO.pdb
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\DTO.dll.config
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\Model.pdb
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\Model.dll.config
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\ControlzEx.pdb
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\EntityFramework.xml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\FontAwesome.WPF.xml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\Google.Protobuf.pdb
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\Google.Protobuf.xml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\LiveCharts.pdb
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\LiveCharts.xml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\MahApps.Metro.pdb
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\MahApps.Metro.xml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\Microsoft.Extensions.PlatformAbstractions.xml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\System.Buffers.xml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\System.Memory.xml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\zxing.xml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\bin\Debug\zxing.presentation.xml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\View.csproj.AssemblyReference.cache
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\View.csproj.SuggestedBindingRedirects.cache
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\ErpAdmin.exe.config
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\AutoCompleteTextBox.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\MENU\Login.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\MENU\Home.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\AutoCompleteTextBox.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\CAJA\pagecajadia.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\BuscarAtencion.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\INVENTARIO\ModuloBodega.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\PRODUCTO\ModuloCategoria.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\INVENTARIO\ModalCantidad.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\INVENTARIO\ModalProductos.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\MENU\Login.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\MENU\Menu.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\MENU\Home.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\HabilitarProceso.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\ModalItem.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\ModalMensaje.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\PEDIDO\ModalCanalVenta.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\PEDIDO\ModalCambioVenta.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\MENU\ModalPc.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\CAJA\ModalAperturaCaja.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\PEDIDO\ModalCantidad.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\REPORT_VENTA\pagefactura.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\REPORT_VENTA\reporteventa.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\USUARIOS\ModuloUser.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\VENTA\ModalFactura.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\VENTA\ModalVenta.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\PEDIDO\modal_cant_devol.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\VENTA\ModalDevolucion.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\CAJA\Pagecaja.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\PEDIDO\pageclientes.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\REPORT_VENTA\pageventadeldia.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\PEDIDO\modal_cambio.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\PEDIDO\Pagenotaventa.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\VENTA\Pagepedido.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\INVENTARIO\Pageproductos.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\App.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\ErpAdmin_Content.g.cs
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\ErpAdmin_MarkupCompile.cache
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\ErpAdmin_MarkupCompile.lref
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\CAJA\pagecajadia.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\BuscarAtencion.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\INVENTARIO\ModuloBodega.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\PRODUCTO\ModuloCategoria.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\INVENTARIO\ModalCantidad.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\INVENTARIO\ModalProductos.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\MENU\Menu.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\HabilitarProceso.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\ModalItem.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\ModalMensaje.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\PEDIDO\ModalCanalVenta.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\PEDIDO\ModalCambioVenta.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\MENU\ModalPc.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\CAJA\ModalAperturaCaja.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\PEDIDO\ModalCantidad.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\REPORT_VENTA\pagefactura.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\REPORT_VENTA\reporteventa.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\USUARIOS\ModuloUser.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\VENTA\ModalFactura.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\VENTA\ModalVenta.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\PEDIDO\modal_cant_devol.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\VENTA\ModalDevolucion.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\CAJA\Pagecaja.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\PEDIDO\pageclientes.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\REPORT_VENTA\pageventadeldia.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\PEDIDO\modal_cambio.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\PEDIDO\Pagenotaventa.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\VENTA\Pagepedido.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\INVENTARIO\Pageproductos.baml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\ErpAdmin.g.resources
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\ErpAdmin.Properties.Resources.resources
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\View.csproj.GenerateResource.cache
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\View.csproj.CoreCompileInputs.cache
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\ErpAdmin.exe.manifest
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\ErpAdmin.application
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\View.csproj.Up2Date
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\ErpAdmin.exe
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\ErpSistem\obj\Debug\ErpAdmin.pdb

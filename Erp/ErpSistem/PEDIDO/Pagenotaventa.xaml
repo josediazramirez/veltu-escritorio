@@ -56,12 +56,28 @@
 
                 <DataGridTextColumn Header="Producto"  Binding="{Binding producto}" Width="250"/>
                 <DataGridTextColumn Header="Centro" Binding="{Binding centro}" Width="80">
-                    <DataGridTextColumn.ElementStyle>
-                        <Style TargetType="TextBlock">
-                            <Setter Property="HorizontalAlignment" Value="Right"></Setter>
+                    <DataGridTextColumn.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding centro}" Value="BODEGA">
+                                    <Setter Property="Background" Value="Red"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <!-- Para contraste -->
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding centro}" Value="LOCAL">
+                                    <Setter Property="Background" Value="Blue"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <!-- Para contraste -->
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding centro}" Value="BODEGA CENTRO">
+                                    <Setter Property="Background" Value="Orange"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                </DataTrigger>
+                            </Style.Triggers>
                         </Style>
-                    </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn.CellStyle>
                 </DataGridTextColumn>
+
                 <DataGridTextColumn Header="STOCK" Binding="{Binding stock_formato}">
                     <DataGridTextColumn.ElementStyle>
                         <Style TargetType="TextBlock">

@@ -30,6 +30,7 @@ namespace ErpClass
     /// </summary>
     public partial class Home : Window
     {
+
         FuncionesUtiles funciones = new FuncionesUtiles();
         ModelDataBase db = new ModelDataBase();
         public Home()
@@ -38,6 +39,17 @@ namespace ErpClass
            StatusDB();
             
         }
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            // Configura el tamaño de la ventana para no cubrir la barra de tareas
+            var workingArea = System.Windows.SystemParameters.WorkArea;
+
+            this.Top = workingArea.Top;
+            this.Left = workingArea.Left;
+            this.Width = workingArea.Width;
+            this.Height = workingArea.Height;
+        }
+
 
         public void StatusDB()
         {

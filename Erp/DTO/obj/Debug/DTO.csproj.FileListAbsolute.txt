@@ -412,3 +412,65 @@ D:\cosas\Erp\DTO\obj\Debug\DTO.pdb
 \\Mac\Home\Downloads\Erp\DTO\obj\Debug\DTO.csproj.CopyComplete
 \\Mac\Home\Downloads\Erp\DTO\obj\Debug\DTO.dll
 \\Mac\Home\Downloads\Erp\DTO\obj\Debug\DTO.pdb
+D:\MIS COSAS\Erp\DTO\bin\Debug\DTO.dll.config
+D:\MIS COSAS\Erp\DTO\bin\Debug\DTO.dll
+D:\MIS COSAS\Erp\DTO\bin\Debug\DTO.pdb
+D:\MIS COSAS\Erp\DTO\bin\Debug\BouncyCastle.Crypto.dll
+D:\MIS COSAS\Erp\DTO\bin\Debug\Google.Protobuf.dll
+D:\MIS COSAS\Erp\DTO\bin\Debug\K4os.Compression.LZ4.dll
+D:\MIS COSAS\Erp\DTO\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\MIS COSAS\Erp\DTO\bin\Debug\K4os.Hash.xxHash.dll
+D:\MIS COSAS\Erp\DTO\bin\Debug\Model.dll
+D:\MIS COSAS\Erp\DTO\bin\Debug\MySql.Data.dll
+D:\MIS COSAS\Erp\DTO\bin\Debug\System.Buffers.dll
+D:\MIS COSAS\Erp\DTO\bin\Debug\System.Memory.dll
+D:\MIS COSAS\Erp\DTO\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\MIS COSAS\Erp\DTO\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\MIS COSAS\Erp\DTO\bin\Debug\EntityFramework.dll
+D:\MIS COSAS\Erp\DTO\bin\Debug\Model.pdb
+D:\MIS COSAS\Erp\DTO\bin\Debug\Model.dll.config
+D:\MIS COSAS\Erp\DTO\bin\Debug\Google.Protobuf.pdb
+D:\MIS COSAS\Erp\DTO\bin\Debug\Google.Protobuf.xml
+D:\MIS COSAS\Erp\DTO\bin\Debug\K4os.Compression.LZ4.xml
+D:\MIS COSAS\Erp\DTO\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\MIS COSAS\Erp\DTO\bin\Debug\K4os.Hash.xxHash.xml
+D:\MIS COSAS\Erp\DTO\bin\Debug\System.Buffers.xml
+D:\MIS COSAS\Erp\DTO\bin\Debug\System.Memory.xml
+D:\MIS COSAS\Erp\DTO\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\MIS COSAS\Erp\DTO\bin\Debug\EntityFramework.xml
+D:\MIS COSAS\Erp\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\MIS COSAS\Erp\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\MIS COSAS\Erp\DTO\obj\Debug\DTO.csproj.Up2Date
+D:\MIS COSAS\Erp\DTO\obj\Debug\DTO.dll
+D:\MIS COSAS\Erp\DTO\obj\Debug\DTO.pdb
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\bin\Debug\DTO.dll.config
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\bin\Debug\DTO.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\bin\Debug\DTO.pdb
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\bin\Debug\Google.Protobuf.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\bin\Debug\Model.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\bin\Debug\MySql.Data.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\bin\Debug\System.Buffers.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\bin\Debug\System.Memory.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\bin\Debug\EntityFramework.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\bin\Debug\Model.pdb
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\bin\Debug\Model.dll.config
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\bin\Debug\Google.Protobuf.pdb
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\bin\Debug\Google.Protobuf.xml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\bin\Debug\System.Buffers.xml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\bin\Debug\System.Memory.xml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\bin\Debug\EntityFramework.xml
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\obj\Debug\DTO.csproj.Up2Date
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\obj\Debug\DTO.dll
+C:\Users\jd915\Downloads\Erp-20251124T201345Z-1-001\Erp\DTO\obj\Debug\DTO.pdb

@@ -572,7 +572,7 @@ namespace ErpClass
                                         {
                                             foreach (var item in detDevol)
                                             {
-                                                actualizarStockDevolucion(item.codigo, null, item.Cantidad);
+                                                actualizarStockDevolucion(item.codigo, item.idinventario, item.Cantidad);
                                             }
 
 
@@ -659,7 +659,7 @@ namespace ErpClass
             inventario inv = new inventario();
             operacion ope = new operacion();
 
-            inv = P.inventario.FirstOrDefault(x => x.idproducto == idproducto);
+            inv = P.inventario.FirstOrDefault(x => x.idproducto == idproducto && x.idinventario==idinventario);
             if (inv != null)
             {
                 ope.idproducto = idproducto;

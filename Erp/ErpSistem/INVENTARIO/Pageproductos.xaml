@@ -67,11 +67,22 @@
                             <TextBlock HorizontalAlignment="Center"><Run Text="Cancelar"/></TextBlock>
                         </StackPanel>
                     </Button>
+
+                    <!-- Campo de Lote -->
+                    <Label Content="Lote" HorizontalAlignment="Left" Margin="886,46,0,0" VerticalAlignment="Top" Width="80" Height="30" FontSize="17" FontWeight="Bold"/>
+                    <TextBox x:Name="tb_lote" HorizontalAlignment="Left" Height="30" Margin="1017,46,0,0" VerticalAlignment="Top" Width="195" FontSize="14" FontFamily="Arial"/>
+
+                    <!-- Campo de Descripción -->
+                    <Label Content="Descripción" HorizontalAlignment="Left" Margin="450,10,0,0" VerticalAlignment="Top" Width="126" Height="30" FontSize="17" FontWeight="Bold"/>
+                    <TextBox x:Name="tb_descripcion" HorizontalAlignment="Left" Height="30" Margin="562,9,0,0" VerticalAlignment="Top" Width="650" FontSize="14" FontFamily="Arial"/>
+
                     <DataGrid x:Name="dgrid_productos" IsReadOnly="True" SelectionMode="Single"  CanUserAddRows="False" AutoGenerateColumns="False" Margin="10,220,20,140"  FontWeight="Bold" FontSize="14" Grid.ColumnSpan="2">
                         <DataGrid.Columns>
                             <DataGridTextColumn  Binding="{Binding codigo}" Visibility="Hidden"/>
 
                             <DataGridTextColumn  Binding="{Binding categoria}" Visibility="Hidden"/>
+                            <DataGridTextColumn  Binding="{Binding descripcion}" Visibility="Hidden"/>
+                            <DataGridTextColumn  Binding="{Binding lote}" Visibility="Hidden"/>
                             <DataGridTextColumn Header="Código" Binding="{Binding codigo}" Width="80"/>
                             <DataGridTextColumn Header="Ean" Binding="{Binding ean}" Width="120" />
                             <DataGridTextColumn Header="Nombre" Binding="{Binding nombre}" Width="300" />
@@ -105,7 +116,7 @@
                     <TextBox x:Name="tb_precio_costo"
                         HorizontalAlignment="Left" Height="32" Margin="562,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" FontSize="17" FontFamily="Arial" 
                             />
-
+                   
                 </Grid>
             </TabItem>
             <TabItem Header="INVENTARIO" x:Name="inv_menu">
