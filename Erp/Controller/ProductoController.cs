@@ -178,7 +178,7 @@ namespace Controller
 
 
             }
-            catch (EntityException ex)
+            catch (EntityException)
             {
                 throw new EntityException();
             }
@@ -352,7 +352,7 @@ namespace Controller
                 }
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
                 throw new Exception();

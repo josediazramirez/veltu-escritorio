@@ -95,7 +95,7 @@ namespace Controller
                     )
                     .FirstOrDefault();
             }
-            catch (MySqlException ex)
+            catch (MySqlException)
             {
                 throw; // puedes loguear antes de relanzar
             }
