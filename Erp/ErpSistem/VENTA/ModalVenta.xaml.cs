@@ -80,16 +80,17 @@ namespace ErpClass
             {
                 val = false;
                 msj("Debe ingresar montos de pago");
-            }else if (check_factura.IsChecked==true)
+            }
+            else if (check_factura.IsChecked == true)
             {
-                if (GlobalClass.factura==null)
+                if (GlobalClass.factura == null)
                 {
                     val = false;
                     msj("Debe ingresar datos de factura");
                 }
             }
 
-            if(val)
+            if (val)
             {
 
                 int totalventa = getNumber(tb_total_a_pagar);
@@ -105,76 +106,76 @@ namespace ErpClass
                     int total = redcompra + transferencia;
 
                     if (total > 0 && numtotalpago > totalventa)
-                    {              
+                    {
                         msj("MEDIO DE PAGO MAYOR A LA VENTA", null, true);
                         valmediopago = false;
                     }
                     if (valmediopago)
                     {
-                
-                    Pedido pedido = P.Pedido.FirstOrDefault(x => x.codigo == GlobalClass.idpedido);
 
-                    if (pedido == null)
-                    {
-                        msj("VENTA YA REALIZADA",null,true);
-                        this.Close();
-                    }
-                    else
-                    {
-                        var resulme = msj("Debe confirmar los medios de pago ¿Desea realizar la venta?",true);
-                        if (resulme == true)
+                        Pedido pedido = P.Pedido.FirstOrDefault(x => x.codigo == GlobalClass.idpedido);
+
+                        if (pedido == null)
                         {
-                            pedido.precio_total = totalventa;
-
-                            pedido.fecha = DateTime.Now;
-                            pedido.idestado = 2;
-
-                            pedido.idComputador = GlobalClass.IdComputador;
-
-
-                            List<AddIngDTO> ingDTOs = new List<AddIngDTO>();
-                            foreach (DetalleDTO item in grid_venta.Items)
+                            msj("VENTA YA REALIZADA", null, true);
+                            this.Close();
+                        }
+                        else
+                        {
+                            var resulme = msj("Debe confirmar los medios de pago ¿Desea realizar la venta?", true);
+                            if (resulme == true)
                             {
+                                pedido.precio_total = totalventa;
 
-                                actualizarStock(item.codigo, item.idinventario, item.Cantidad);
-                            }
-                            int v = 0;
-                            v = P.SaveChanges();
+                                pedido.fecha = DateTime.Now;
+                                pedido.idestado = 2;
 
-                            GlobalClass.idcliente = null;
-                            GlobalClass.nombre = "";
+                                pedido.idComputador = GlobalClass.IdComputador;
 
-                            if (v > 0)
-                            {
-                                GenerarFactura();
-                                guardarMovVenta(pedido.codigo);
-                                printTicket(pedido.codigo);
-                                if (pedido.despacho == "des" || pedido.despacho == "ret48")
+
+                                List<AddIngDTO> ingDTOs = new List<AddIngDTO>();
+                                foreach (DetalleDTO item in grid_venta.Items)
                                 {
-                                    getDespacho(pedido.codigo);
-                                }
-                                if (GlobalClass.idventadevolucion != null)
-                                {
-                                    if (getNumber(tb_saldo_sobrante) > 0)
-                                    {
-                                        devolucion();
-                                    }
-                                    if (getNumber(tb_saldo_sobrante) == 0)
-                                    {
-                                        cambiarEstadoDevolucion();
-                                    }
-                                }
 
-                                GlobalClass.productos.Clear();
-                                GlobalClass.estado = 1;
-                                GlobalClass.saldo_devolucion = null;
-                                GlobalClass.idventadevolucion = null;
-                                this.Close();
-                            }
-                            else
-                            {
-                                msj("Error en la base de datos");
-                            }
+                                    actualizarStock(item.codigo, item.idinventario, item.Cantidad);
+                                }
+                                int v = 0;
+                                v = P.SaveChanges();
+
+                                GlobalClass.idcliente = null;
+                                GlobalClass.nombre = "";
+
+                                if (v > 0)
+                                {
+                                    GenerarFactura();
+                                    guardarMovVenta(pedido.codigo);
+                                    printTicket(pedido.codigo);
+                                    if (pedido.despacho == "des" || pedido.despacho == "ret48")
+                                    {
+                                        getDespacho(pedido.codigo);
+                                    }
+                                    if (GlobalClass.idventadevolucion != null)
+                                    {
+                                        if (getNumber(tb_saldo_sobrante) > 0)
+                                        {
+                                            devolucion();
+                                        }
+                                        if (getNumber(tb_saldo_sobrante) == 0)
+                                        {
+                                            cambiarEstadoDevolucion();
+                                        }
+                                    }
+
+                                    GlobalClass.productos.Clear();
+                                    GlobalClass.estado = 1;
+                                    GlobalClass.saldo_devolucion = null;
+                                    GlobalClass.idventadevolucion = null;
+                                    this.Close();
+                                }
+                                else
+                                {
+                                    msj("Error en la base de datos");
+                                }
                             }
                         }
 
@@ -187,23 +188,21 @@ namespace ErpClass
                 }
             }
         }
-        private async void GenerarFactura()
+        private void GenerarFactura()
         {
-            if (check_factura.IsChecked==true)
+            if (check_factura.IsChecked == true)
             {
                 try
                 {
-                    factura factura = new factura();
-                    factura.rut = GlobalClass.factura.rut;
-                    factura.correo = GlobalClass.factura.correo;
-                    factura.numero = GlobalClass.factura.numero;
-                    factura.estado = 0;
-                    factura.fecha = DateTime.Now;
-                    factura.idpedido = GlobalClass.idpedido;
-
-                    P.facturas.Add(factura);
-
-                    await P.SaveChangesAsync();
+                    controller.CrearFactura(new FacturaDTO
+                    {
+                        idpedido = GlobalClass.idpedido,
+                        rut = GlobalClass.factura.rut,
+                        numero = GlobalClass.factura.numero,
+                        correo = GlobalClass.factura.correo,
+                        fecha = DateTime.Now,
+                        estado = 0
+                    });
                     DialogResult = true;
                     this.Close();
                 }
@@ -213,7 +212,7 @@ namespace ErpClass
                     m.Show();
                 }
             }
-            
+
 
         }
         private void printTicket(int codigo)
@@ -265,7 +264,7 @@ namespace ErpClass
                 System.Drawing.Rectangle rectanguloQr =
                 new System.Drawing.Rectangle(
                     (e1.PageBounds.Width - 150) / 2,
-                    (int)rectanguloTexto.Bottom+40,
+                    (int)rectanguloTexto.Bottom + 40,
                    150,
                    150);
 
@@ -377,9 +376,9 @@ namespace ErpClass
                     P.pagomov.Add(pagomov);
                 }
                 var resulcaj = P.SaveChanges();
-            }catch(Exception ex)
+            }
+            catch (Exception)
             {
-
             }
         }
         private void getDespacho(int id)
@@ -520,7 +519,7 @@ namespace ErpClass
             int total = comanda[0].total;
             foreach (var item in comanda)
             {
-                textoComanda.AppendLine("CODIGO PROD["+ item.cod_pro+"]");
+                textoComanda.AppendLine("CODIGO PROD[" + item.cod_pro + "]");
                 textoComanda.AppendLine("  " + item.cantidad + space + item.producto + space + "$" + item.precio);
             }
             textoComanda.AppendLine(linea);
@@ -816,7 +815,7 @@ namespace ErpClass
 
             return textoComanda.ToString();
         }
-        private bool? msj(string msj,bool? canc=null,bool? time=null)
+        private bool? msj(string msj, bool? canc = null, bool? time = null)
         {
             ModalMensaje m = new ModalMensaje(msj, canc, time);
             return m.ShowDialog();
@@ -824,7 +823,7 @@ namespace ErpClass
 
         private void check_factura_Checked(object sender, RoutedEventArgs e)
         {
-            if (check_factura.IsChecked==true)
+            if (check_factura.IsChecked == true)
             {
                 btn_factura.Visibility = Visibility.Visible;
             }
@@ -832,15 +831,15 @@ namespace ErpClass
             {
                 btn_factura.Visibility = Visibility.Hidden;
             }
-            
+
         }
 
         private void btn_factura_Click(object sender, RoutedEventArgs e)
         {
-            ModalFactura modalFactura = new ModalFactura(); 
-           var r = modalFactura.ShowDialog();
+            ModalFactura modalFactura = new ModalFactura();
+            var r = modalFactura.ShowDialog();
 
-            if (r==true)
+            if (r == true)
             {
                 ModalMensaje modal = new ModalMensaje("Factura modificada");
                 modal.ShowDialog();

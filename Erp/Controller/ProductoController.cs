@@ -1,14 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DTO;
 using Model;
-using DTO;
+using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Asn1.Cmp;
+using System;
+using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.Entity.Core;
 using System.Data.Entity.SqlServer;
-using MySql.Data.MySqlClient;
+using System.Linq;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using static System.Net.WebRequestMethods;
 
 namespace Controller
 {
@@ -46,10 +51,10 @@ namespace Controller
             {
                 var msj = ex.Message;
             }
-            
+
             return lista_product;
         }
-        public List<productoDTO> getFiltroProductoFull(string texto,int idcentro)
+        public List<productoDTO> getFiltroProductoFull(string texto, int idcentro)
         {
             List<productoDTO> lista_product = new List<productoDTO>();
             try
@@ -97,6 +102,7 @@ namespace Controller
         public List<productoDTO> getGrillaProductos(int? codigo)
         {
             List<productoDTO> lista = new List<productoDTO>();
+            string baseUrl = ConfigurationManager.AppSettings["ApiBaseUrl"];
             try
             {
                 if (codigo == null)
@@ -114,23 +120,24 @@ namespace Controller
                         into mars
                          from marc in mars.DefaultIfEmpty()
                          orderby pro.codigo descending
-                        
+
                          select new productoDTO
-                    {
-                        codigo = pro.codigo,
-                        nombre = pro.nombre,
-                        precio = pro.precio.Value,
-                        categoria = cat.codigo,
-                        name_categoria = cat.nombre.ToUpper(),
-                        marca = marc.nombre,
-                        color = col.nombre,
-                        idmarca = marc.idmarca,
-                        idcolor = col.idcolor,
-                        ean  = pro.ean_codigo,
-                        precio_costo = pro.precio_costo,
-                        estado = pro.estado,
-                        descripcion = pro.descripcion,
-                        lote = pro.lote
+                         {
+                             codigo = pro.codigo,
+                             nombre = pro.nombre,
+                             precio = pro.precio.Value,
+                             categoria = cat.codigo,
+                             name_categoria = cat.nombre.ToUpper(),
+                             marca = marc.nombre,
+                             color = col.nombre,
+                             idmarca = marc.idmarca,
+                             idcolor = col.idcolor,
+                             ean = pro.ean_codigo,
+                             precio_costo = pro.precio_costo,
+                             estado = pro.estado,
+                             descripcion = pro.descripcion,
+                             lote = pro.lote,
+                             ImagenRuta = pro.imagen1
                          }).ToList();
                 }
                 else
@@ -146,7 +153,7 @@ namespace Controller
                     on pro.idmarca equals mar.idmarca
                     into mars
                      from marc in mars.DefaultIfEmpty()
-                     where  pro.categoria_codigo==codigo
+                     where pro.categoria_codigo == codigo
                      orderby pro.codigo descending
                      select new productoDTO
                      {
@@ -163,17 +170,27 @@ namespace Controller
                          precio_costo = pro.precio_costo,
                          estado = pro.estado,
                          descripcion = pro.descripcion,
-                         lote = pro.lote
+                         lote = pro.lote,
+                         ImagenRuta = pro.imagen1
                      }).ToList();
                 }
 
 
 
             }
-            catch (EntityException)
+            catch (EntityException ex)
             {
                 throw new EntityException();
             }
+            foreach (var item in lista)
+            {
+                item.ImagenRuta = $"{baseUrl}/{item.ImagenRuta}";
+                if (item.precio_costo != null)
+                {
+                    item.utilidad = item.precio - item.precio_costo.Value;
+                }
+            }
+
             return lista;
         }
         public List<productoInvDTO> getProductoInv(int? categoria)
@@ -201,7 +218,7 @@ namespace Controller
             try
             {
                 lista = (from centro in db.centro
-                         where centro.estado==1
+                         where centro.estado == 1
                          select new CategoriaDTO
                          {
                              codigo = centro.idcentro,
@@ -220,7 +237,7 @@ namespace Controller
             try
             {
                 lista = (from cate in db.Categoria
-                         where cate.estado==1
+                         where cate.estado == 1
                          select new CategoriaDTO
                          {
                              codigo = cate.codigo,
@@ -262,14 +279,14 @@ namespace Controller
             }
             return lista;
         }
-        public List<MovimientoDTO> getMovimientoxfecha(DateTime fecha_ini, DateTime fecha_fin,string producto,string tipo_ope)
+        public List<MovimientoDTO> getMovimientoxfecha(DateTime fecha_ini, DateTime fecha_fin, string producto, string tipo_ope)
         {
-            
+
             List<MovimientoDTO> lista = new List<MovimientoDTO>();
             try
             {
                 lista = db.Database
-                 .SqlQuery<MovimientoDTO>("sp_inventario_mov_x_fecha(@p_fecha_ini,@p_fecha_fin,@p_producto,@p_tipo_ope)", 
+                 .SqlQuery<MovimientoDTO>("sp_inventario_mov_x_fecha(@p_fecha_ini,@p_fecha_fin,@p_producto,@p_tipo_ope)",
                  new MySqlParameter("@p_fecha_ini", fecha_ini),
                  new MySqlParameter("@p_fecha_fin", fecha_fin),
                  new MySqlParameter("@p_producto", producto),
@@ -282,12 +299,12 @@ namespace Controller
             }
             return lista;
         }
-        public int guardarProducto(productoDTO producto)
+        public async Task<int> guardarProducto(productoDTO producto, byte[] image)
         {
             int insert = 0;
             try
             {
-                
+
 
                 Producto pro = new Producto();
                 pro.nombre = producto.nombre.ToUpper();
@@ -301,8 +318,8 @@ namespace Controller
                 pro.descripcion = producto.descripcion;
                 pro.lote = producto.lote;
 
-                insert = db.Producto.FirstOrDefault(x => x.nombre == producto.nombre 
-                && x.idmarca==producto.idmarca && x.idcolor == producto.idcolor) != null ? 1 : 0;
+                insert = db.Producto.FirstOrDefault(x => x.nombre == producto.nombre
+                && x.idmarca == producto.idmarca && x.idcolor == producto.idcolor) != null ? 1 : 0;
 
                 if (insert == 1)
                 {
@@ -327,6 +344,10 @@ namespace Controller
                     db.inventario.Add(inven);
                     db.SaveChanges();
 
+                    await guardarImagenAsync(pro.codigo, image);
+
+
+
                     return 0;
                 }
 
@@ -335,6 +356,40 @@ namespace Controller
             {
 
                 throw new Exception();
+            }
+        }
+        public async Task guardarImagenAsync(int idproducto, byte[] imagen)
+        {
+            if (imagen != null)
+            {
+
+
+                using (var client = new HttpClient())
+                using (var form = new MultipartFormDataContent())
+                {
+                    client.DefaultRequestHeaders.Add("ApiKey", "lkanfn12213in12312aXSAsd21312");
+                    // idproducto como parte del form
+                    form.Add(new StringContent(idproducto.ToString()), "idproducto");
+
+                    // imagen como archivo (usando el byte[])
+                    var imageContent = new ByteArrayContent(imagen);
+                    imageContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("image/jpeg");
+                    form.Add(imageContent, "img1", "imagen.jpg");
+
+                    string baseUrl = ConfigurationManager.AppSettings["ApiBaseUrl"];
+
+                    var response = await client.PostAsync($"{baseUrl}/ProductosAll/GuardarImagenProducto", form);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var result = await response.Content.ReadAsStringAsync();
+                        //MessageBox.Show("Imagen enviada correctamente: " + result);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error al enviar imagen: " + response.StatusCode);
+                    }
+                }
             }
         }
         public int RemoveProducto(int codigo)
@@ -350,7 +405,7 @@ namespace Controller
                 else
                 {
                     inventario inv = db.inventario.FirstOrDefault(x => x.idproducto == codigo);
-                    if (inv!=null)
+                    if (inv != null)
                     {
                         db.inventario.Remove(inv);
                     }
@@ -373,14 +428,14 @@ namespace Controller
             int result = 0;
             try
             {
-                
+
                 inventario inv = db.inventario.FirstOrDefault(x => x.idinventario == codigo);
                 if (inv != null)
                 {
                     db.inventario.Remove(inv);
                 }
 
-                result =db.SaveChanges();
+                result = db.SaveChanges();
                 if (result > 0)
                 {
                     return 1;
@@ -398,7 +453,7 @@ namespace Controller
             }
 
         }
-        public int EditProducto(productoDTO pro)
+        public async Task<int> EditProducto(productoDTO pro, byte[] image)
         {
             Producto producto = db.Producto.FirstOrDefault(x => x.codigo == pro.codigo);
 
@@ -423,16 +478,16 @@ namespace Controller
                 inven.stock_minimo = 0;
                 db.inventario.Add(inven);
             }
-
+            await guardarImagenAsync(pro.codigo, image);
             return db.SaveChanges();
         }
         public int EditarInventario(InventarioDTO inv)
         {
-            inventario invent = db.inventario.FirstOrDefault(x => x.idinventario==inv.cod_inv);
+            inventario invent = db.inventario.FirstOrDefault(x => x.idinventario == inv.cod_inv);
 
             invent.idproducto = inv.cod_pro;
             invent.idmedida = inv.iduni_medida;
-            if (invent.idmedida==1)
+            if (invent.idmedida == 1)
             {
                 inv.stock_minimo = inv.stock_minimo.Replace(".", ",");
                 inv.stock_total = inv.stock_total.Replace(".", ",");
@@ -445,13 +500,13 @@ namespace Controller
                 invent.stock_total = int.Parse(inv.stock_total);
             }
             invent.idcentro = inv.idubicacion;
-           
+
 
 
 
             return db.SaveChanges();
         }
-        
+
         public int GuardarInventario(InventarioDTO inv)
         {
             inventario invent = new inventario();

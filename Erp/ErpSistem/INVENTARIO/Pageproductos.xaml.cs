@@ -1,5 +1,6 @@
 ﻿using Controller;
 using DTO;
+using Microsoft.Win32;
 using Model;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,8 @@ using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
 using WPFAutoCompleteTextbox;
 
 namespace ErpClass
@@ -129,7 +132,7 @@ namespace ErpClass
         }
 
 
-        public void btn_guardar_pro(object sender, RoutedEventArgs e)
+        public async void btn_guardar_pro(object sender, RoutedEventArgs e)
         {
 
             try
@@ -162,8 +165,8 @@ namespace ErpClass
                     producto.precio_costo = int.Parse(tb_precio_costo.Text);
                 }
 
-
-                if (controller.EditProducto(producto) > 0)
+                byte[] imagen = ConvertImageToBytes(PreviewImage.Source);
+                if (await controller.EditProducto(producto,imagen) > 0)
                 {
 
                     var text = tb_filtro_producto.Text.ToString().ToLower().Split(' ');
@@ -335,6 +338,7 @@ namespace ErpClass
             tb_ean.Clear();
             cbx_marca.SelectedIndex = 0;
             cbx_color.SelectedIndex = 0;
+            PreviewImage.Source = null;
         }
         private void btn_eliminarr_Click(object sender, RoutedEventArgs e)
         {
@@ -378,7 +382,7 @@ namespace ErpClass
 
 
         }
-        private void btn_addCli_Click(object sender, RoutedEventArgs e)
+        private async void btn_addCli_Click(object sender, RoutedEventArgs e)
         {
             try
             {
@@ -406,7 +410,6 @@ namespace ErpClass
                         productoDTO producto = new productoDTO();
                         producto.nombre = tb_nombre.Text;
                         producto.categoria = (int)cbx_categoria.SelectedValue;
-                        List<TamanioPizzaDTO> tamanios_precios = new List<TamanioPizzaDTO>();
 
 
                         producto.precio = int.Parse(tb_precio.Text);
@@ -422,7 +425,8 @@ namespace ErpClass
                         {
                             producto.precio_costo = int.Parse(tb_precio_costo.Text);
                         }
-                        if (controller.guardarProducto(producto) == 0)
+                        byte[] imagen = ConvertImageToBytes(PreviewImage.Source);
+                        if (await controller.guardarProducto(producto, imagen) == 0)
                         {
                             CleanControles();
                             var text = tb_nombre.Text.ToString().ToLower().Split(' ');
@@ -1187,7 +1191,7 @@ namespace ErpClass
         {
           
             PrintDocument p = new PrintDocument();
-            FontFamily font = new FontFamily("Courier New");
+            System.Drawing.FontFamily font = new System.Drawing.FontFamily("Courier New");
             
             p.PrintPage += delegate (object sender1, PrintPageEventArgs e1)
             {
@@ -1307,8 +1311,88 @@ namespace ErpClass
 
             
         }
+        private void UploadImage_Click(object sender, RoutedEventArgs e)
+        {
+            var ofd = new OpenFileDialog
+            {
+                Title = "Selecciona una imagen",
+                Filter = "Imágenes|*.png;*.jpg;*.jpeg;*.bmp;*.gif|Todos los archivos|*.*",
+                Multiselect = false
+            };
 
+            if (ofd.ShowDialog() == true)
+            {
+                try
+                {
+                    var bitmap = new BitmapImage();
+                    bitmap.BeginInit();
+                    bitmap.CacheOption = BitmapCacheOption.OnLoad; // permite cerrar el archivo después de cargar
+                    bitmap.UriSource = new Uri(ofd.FileName);
+                    bitmap.EndInit();
+                    bitmap.Freeze(); // mejora rendimiento en UI
 
+                    PreviewImage.Source = bitmap;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"No se pudo cargar la imagen:\n{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+        }
+
+        private void PreviewImage_MouseLeftButtonUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            // Crear una nueva ventana para mostrar la imagen grande
+            var ventana = new System.Windows.Window
+            {
+                Title = "Vista previa",
+                Width = 600,
+                Height = 400,
+                Content = new System.Windows.Controls.Image
+                {
+                    Source = PreviewImage.Source,   // reutiliza la imagen ya cargada
+                    Stretch = System.Windows.Media.Stretch.Uniform
+                }
+            };
+
+            ventana.ShowDialog();
+        }
+        private byte[] ConvertImageToBytes(System.Windows.Media.ImageSource imageSource)
+        {
+            var bitmapSource = imageSource as System.Windows.Media.Imaging.BitmapSource;
+            if (bitmapSource == null) return null;
+
+            // Usamos un encoder (PNG, JPG, etc.)
+            var encoder = new System.Windows.Media.Imaging.PngBitmapEncoder();
+            encoder.Frames.Add(System.Windows.Media.Imaging.BitmapFrame.Create(bitmapSource));
+
+            using (var stream = new System.IO.MemoryStream())
+            {
+                encoder.Save(stream);
+                return stream.ToArray(); // 👉 aquí tienes el byte[]
+            }
+        }
+
+        private void Image_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            var img = sender as System.Windows.Controls.Image;
+            if (img?.Source != null)
+            {
+                Window win = new Window
+                {
+                    Title = "Vista de Imagen",
+                    Width = 600,
+                    Height = 600,
+                    Content = new System.Windows.Controls.Image
+                    {
+                        Source = img.Source,
+                        Stretch = Stretch.Uniform
+                    }
+                };
+                win.ShowDialog();
+            }
+
+        }
     }
     class Item
     {

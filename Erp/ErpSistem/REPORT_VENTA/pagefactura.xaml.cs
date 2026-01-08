@@ -55,7 +55,7 @@ namespace ErpClass
                     idpedido = x.idpedido
                 }).ToListAsync();
 
-                tabla_factura.ItemsSource = lista;
+                tabla_factura.ItemsSource = lista.OrderByDescending(x=>x.idfactura);
             }
             catch (EntityException e)
             {

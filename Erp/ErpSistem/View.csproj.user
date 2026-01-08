@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <PublishUrlHistory>C:\ERP\|ftp://170.239.84.196/|170.239.84.196\|C:\Users\Jose\Documents\</PublishUrlHistory>
-    <InstallUrlHistory>http://erptome.com/install/|http://erptome.com:81/install/</InstallUrlHistory>
+    <InstallUrlHistory>http://192.168.18.168/install/|http://http://192.168.18.168/install/|http://erptome.com/install/|http://erptome.com:81/install/</InstallUrlHistory>
     <SupportUrlHistory />
     <UpdateUrlHistory />
     <BootstrapperUrlHistory />

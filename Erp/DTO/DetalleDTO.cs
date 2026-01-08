@@ -40,6 +40,7 @@ namespace DTO
         public string centro { get; set; }
         public int autorizacion { get; set; }
         public int idmedida { get; set; }
+        public string ImagenRuta { get; set; }
         public int CantidadDispo
         {
             get

@@ -78,6 +78,29 @@ namespace Controller
             }
             return lista;
         }
+        public FacturaDTO CrearFactura(FacturaDTO factura)
+        {
+            FacturaDTO nuevaFactura = null;
+            try
+            {
+                nuevaFactura = db.Database
+                    .SqlQuery<FacturaDTO>(
+                        "CALL sp_insert_factura(@rut, @correo, @numero, @idpedido, @fecha, @estado)",
+                        new MySqlParameter("@rut", factura.rut),
+                        new MySqlParameter("@correo", factura.correo),
+                        new MySqlParameter("@numero", factura.numero),
+                        new MySqlParameter("@idpedido", factura.idpedido),
+                        new MySqlParameter("@fecha", factura.fecha),
+                        new MySqlParameter("@estado", factura.estado)
+                    )
+                    .FirstOrDefault();
+            }
+            catch (MySqlException ex)
+            {
+                throw; // puedes loguear antes de relanzar
+            }
+            return nuevaFactura;
+        }
         public atencion GetUltimaAtencion()
         {
 

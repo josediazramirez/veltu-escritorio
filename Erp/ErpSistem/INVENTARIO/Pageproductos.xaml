@@ -79,17 +79,33 @@
                     <DataGrid x:Name="dgrid_productos" IsReadOnly="True" SelectionMode="Single"  CanUserAddRows="False" AutoGenerateColumns="False" Margin="10,220,20,140"  FontWeight="Bold" FontSize="14" Grid.ColumnSpan="2">
                         <DataGrid.Columns>
                             <DataGridTextColumn  Binding="{Binding codigo}" Visibility="Hidden"/>
-
                             <DataGridTextColumn  Binding="{Binding categoria}" Visibility="Hidden"/>
                             <DataGridTextColumn  Binding="{Binding descripcion}" Visibility="Hidden"/>
                             <DataGridTextColumn  Binding="{Binding lote}" Visibility="Hidden"/>
                             <DataGridTextColumn Header="Código" Binding="{Binding codigo}" Width="80"/>
+                            <DataGridTemplateColumn Header="Imagen">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Image
+    Source="{Binding ImagenRuta}"
+    MouseDown="Image_MouseDown"
+    Width="64"
+    Height="64"
+    Stretch="Uniform"
+    RenderOptions.BitmapScalingMode="HighQuality"
+    SnapsToDevicePixels="True"
+    UseLayoutRounding="True"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+
                             <DataGridTextColumn Header="Ean" Binding="{Binding ean}" Width="120" />
                             <DataGridTextColumn Header="Nombre" Binding="{Binding nombre}" Width="300" />
                             <DataGridTextColumn Header="Color" Binding="{Binding color}" Width="100"  />
                             <DataGridTextColumn Header="Marca" Binding="{Binding marca}" Width="120" />
                             <DataGridTextColumn Header="Precio" Binding="{Binding precio, StringFormat={}{0:n0}}"  Width="80"  />
                             <DataGridTextColumn Header="Precio Cos." Binding="{Binding precio_costo, StringFormat={}{0:n0}}" Width="100"  />
+                            <DataGridTextColumn Header="Utilidad" Binding="{Binding utilidad, StringFormat={}{0:n0}}" Width="100"  />
                             <DataGridTextColumn Header="Categoria" Binding="{Binding name_categoria}" Width="150" />
                             <DataGridTemplateColumn Header="Estado"  CanUserResize="False" Width="70" IsReadOnly="False" >
                                 <DataGridTemplateColumn.CellTemplate>
@@ -116,7 +132,25 @@
                     <TextBox x:Name="tb_precio_costo"
                         HorizontalAlignment="Left" Height="32" Margin="562,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" FontSize="17" FontFamily="Arial" 
                             />
-                   
+                    <Button Content="SUBIR IMAGEN" HorizontalAlignment="Left" Height="32" Margin="889,82,0,0" VerticalAlignment="Top" Width="118"
+                Padding="12,6"
+                Click="UploadImage_Click" FontWeight="Bold"/>
+
+                    <Border  HorizontalAlignment="Left" Height="100" Margin="1050,82,0,0" VerticalAlignment="Top" Width="118" BorderBrush="#DDD" BorderThickness="1">
+                        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                         
+                            <Image
+x:Name="PreviewImage"
+   MouseLeftButtonUp="PreviewImage_MouseLeftButtonUp"
+Width="100"
+Height="100"
+Stretch="Uniform"
+RenderOptions.BitmapScalingMode="HighQuality"
+SnapsToDevicePixels="True"
+UseLayoutRounding="True"/>
+                        </ScrollViewer>
+                    </Border>
+
                 </Grid>
             </TabItem>
             <TabItem Header="INVENTARIO" x:Name="inv_menu">

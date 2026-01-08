@@ -53,7 +53,21 @@
                    >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="cod" Binding="{Binding codigo}" Width="60"/>
-
+                <DataGridTemplateColumn Header="Imagen">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image
+    Source="{Binding ImagenRuta}"
+    MouseDown="Image_MouseDown"
+    Width="64"
+    Height="64"
+    Stretch="Uniform"
+    RenderOptions.BitmapScalingMode="HighQuality"
+    SnapsToDevicePixels="True"
+    UseLayoutRounding="True"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
                 <DataGridTextColumn Header="Producto"  Binding="{Binding producto}" Width="250"/>
                 <DataGridTextColumn Header="Centro" Binding="{Binding centro}" Width="80">
                     <DataGridTextColumn.CellStyle>
@@ -116,7 +130,7 @@
                        FontSize="14"
                       FontWeight="Bold" AutoGenerateColumns="False">
             <DataGrid.Columns >
-                
+
                 <DataGridTemplateColumn CanUserResize="False" IsReadOnly="true" Width="30" >
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
@@ -226,7 +240,7 @@
             </RadioButton>
             <Label x:Name="lb_rut"  FontSize="18" Foreground="White" HorizontalAlignment="Left" FontWeight="Bold" Content="RUT" Grid.Column="1" Grid.Row="1"></Label>
             <Label x:Name="lb_correo"  FontSize="18" Foreground="White" HorizontalAlignment="Left" FontWeight="Bold" Content="CORREO" Grid.Column="1" Grid.Row="2"></Label>
-            
+
             <Label x:Name="lb_nombre"  FontSize="18" Foreground="White" HorizontalAlignment="Left" FontWeight="Bold" Content="NOMBRE" Grid.Column="1" Grid.Row="3"></Label>
             <Label x:Name="lb_telefono" FontSize="18" Foreground="White" HorizontalAlignment="Left" FontWeight="Bold" Content="TELEFONO" Grid.Column="1" Grid.Row="4"></Label>
             <Label x:Name="lb_telefono_opc" FontSize="18" Foreground="White" HorizontalAlignment="Left" FontWeight="Bold" Content="TELEFONO 2" Grid.Column="1" Grid.Row="5"></Label>
@@ -235,7 +249,7 @@
 
             <TextBox x:Name="tb_rut"  FontWeight="Bold" FontSize="16" Grid.Column="3" Grid.Row="1" Margin="5"></TextBox>
             <TextBox x:Name="tb_correo"  FontWeight="Bold" FontSize="16" Grid.Column="3" Grid.Row="2" Margin="5"></TextBox>
-            
+
             <TextBox x:Name="tb_nombre"  FontWeight="Bold" FontSize="16" Grid.Column="3" Grid.Row="3" Margin="5"></TextBox>
             <TextBox x:Name="tb_telefono" MaxLength="9" FontWeight="Bold" FontSize="16" Grid.Column="3" Grid.Row="4" Margin="5"></TextBox>
             <TextBox x:Name="tb_telefono_opc" MaxLength="9" FontWeight="Bold" FontSize="16" Grid.Column="3" Grid.Row="5" Margin="5"></TextBox>
@@ -258,7 +272,7 @@
             <Label x:Name="lb_desc_total" Content="SUB TOTAL" Grid.Row="1"  VerticalAlignment="Top" Background="#3498DB" VerticalContentAlignment="Center" FontSize="40"  Foreground="White" FontWeight="Bold"  Grid.ColumnSpan="3" />
             <Label x:Name="lb_total" Content="TOTAL" Grid.Row="2"  VerticalAlignment="Top" Background="#3498DB" VerticalContentAlignment="Center" FontSize="40"  Foreground="White" FontWeight="Bold"  Grid.ColumnSpan="3" />
 
-            
+
             <Button 
 
                         x:Name="btn_canl_cam"

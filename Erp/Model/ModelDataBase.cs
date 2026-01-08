@@ -14,8 +14,6 @@ namespace Model
         public virtual DbSet<Cliente> Cliente { get; set; }
         public virtual DbSet<Computador> Computador { get; set; }
         public virtual DbSet<Detalle_pedido> Detalle_pedido { get; set; }
-        public virtual DbSet<ExtraIngrediente> ExtraIngrediente { get; set; }
-        public virtual DbSet<ingrediente> ingrediente { get; set; }
         public virtual DbSet<MedioPago> MedioPago { get; set; }
         public virtual DbSet<Pedido> Pedido { get; set; }
         public virtual DbSet<Producto> Producto { get; set; }
@@ -40,6 +38,5 @@ namespace Model
         public virtual DbSet<autorizacion_proceso> autorizacion_proceso { get; set; }
         public virtual DbSet<tipo_operacion> tipo_operacion { get; set; }
         public virtual DbSet<factura> facturas { get; set; }
-
     }
 }

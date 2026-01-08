@@ -31,6 +31,7 @@ namespace Model
         public string ean_codigo { get; set; }
         public string descripcion { get; set; }
         public string lote { get; set; }
+        public string imagen1 { get; set; }
 
     }
 

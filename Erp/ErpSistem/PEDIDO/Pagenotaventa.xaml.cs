@@ -1,17 +1,19 @@
-﻿using System;
+﻿using Controller;
+using DTO;
+using Model;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Configuration;
+using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using DTO;
-using Controller;
-using System.Collections.ObjectModel;
-using Model;
-using System.Drawing;
-using System.Drawing.Printing;
-using System.Text.RegularExpressions;
+using System.Windows.Media;
 using ZXing;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
@@ -627,6 +629,7 @@ namespace ErpClass
                 var text = txt_buscar.Text.ToString().ToLower();
                 if (!string.IsNullOrWhiteSpace(text))
                 {
+                    string baseUrl = ConfigurationManager.AppSettings["ApiBaseUrl"];
                     var list = fn_pro.getFiltroProducto(text).Select(x => new DetalleDTO
                     {
                         codigo = x.codigo,
@@ -639,7 +642,8 @@ namespace ErpClass
                         centro = x.centro,
                         idinventario = x.idinventario,
                         idmedida = x.idmedida,
-                        autorizacion = x.autorizacion
+                        autorizacion = x.autorizacion,
+                        ImagenRuta = $"{baseUrl}/{x.imagen1}"
                     }).ToList();
 
                     if (list.Count > 0)
@@ -934,6 +938,26 @@ namespace ErpClass
             }
 
         }
-    
+        private void Image_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            var img = sender as System.Windows.Controls.Image;
+            if (img?.Source != null)
+            {
+                Window win = new Window
+                {
+                    Title = "Vista de Imagen",
+                    Width = 600,
+                    Height = 600,
+                    Content = new System.Windows.Controls.Image
+                    {
+                        Source = img.Source,
+                        Stretch = Stretch.Uniform
+                    }
+                };
+                win.ShowDialog();
+            }
+
+        }
+
     }
 }

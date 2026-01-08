@@ -66,7 +66,21 @@
                 <DataGrid.Columns>
                     <DataGridTextColumn Visibility="Hidden" Binding="{Binding idinventario}"></DataGridTextColumn>
                     <DataGridTextColumn Header="SKU" Binding="{Binding codigo}"/>
-
+                    <DataGridTemplateColumn Header="Imagen">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Image
+    Source="{Binding ImagenRuta}"
+    MouseDown="Image_MouseDown"
+    Width="64"
+    Height="64"
+    Stretch="Uniform"
+    RenderOptions.BitmapScalingMode="HighQuality"
+    SnapsToDevicePixels="True"
+    UseLayoutRounding="True"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
                     <DataGridTextColumn Header="Producto"  Binding="{Binding producto}" Width="250"/>
                     <DataGridTextColumn Header="Marca"  Binding="{Binding marca}" Width="80"/>
                     <DataGridTextColumn Header="Precio" Binding="{Binding precio, StringFormat={}$ {0:N0}}"  Width="100" >
