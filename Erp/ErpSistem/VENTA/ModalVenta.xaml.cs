@@ -31,6 +31,8 @@ namespace ErpClass
     {
         readonly ModelDataBase P = new ModelDataBase();
         readonly InformeController controller = new InformeController();
+        public int descuento = 0;
+        public int total_descuento = 0;
         public ModalVenta()
         {
 
@@ -64,7 +66,7 @@ namespace ErpClass
                 tb_saldo_favor.Content = String.Format("{0:N0}", GlobalClass.saldo_devolucion);
                 calcularPago();
             }
-
+            lb_subtotal.Content = String.Format("{0:N0}", GlobalClass.total);
         }
         public void cargarDatos()
         {
@@ -122,7 +124,7 @@ namespace ErpClass
                         }
                         else
                         {
-                            var resulme = msj("Debe confirmar los medios de pago ¿Desea realizar la venta?", true);
+                            var resulme = msj($"¿DESEA CONFIRMAR EL PAGO?", true);
                             if (resulme == true)
                             {
                                 pedido.precio_total = totalventa;
@@ -132,6 +134,7 @@ namespace ErpClass
 
                                 pedido.idComputador = GlobalClass.IdComputador;
 
+                                pedido.descuento = total_descuento;
 
                                 List<AddIngDTO> ingDTOs = new List<AddIngDTO>();
                                 foreach (DetalleDTO item in grid_venta.Items)
@@ -567,12 +570,39 @@ namespace ErpClass
         }
         private void calcularPago()
         {
+            int descuen = descuento;
             int total = GlobalClass.total;
             int efec = getNumber(tb_efectivo);
             int redcom = getNumber(tb_redcompra);
             int transfe = getNumber(tb_transferencia);
             int tarcre = getNumber(tb_credi);
             int compraaqui = getNumber(tb_compraaqui);
+
+            if (descuen > 0)
+            {
+
+                int desc_aplicado = (total * descuen / 100);
+                total = total - desc_aplicado;
+
+
+                int? total_desc = GlobalClass.productos.Sum(x => x.precio_desc);
+                total_desc += desc_aplicado;
+                if (total_desc != null)
+                {
+                    tb_descuento.Content = String.Format("{0:N0}", total_desc);
+                }
+                total_descuento = desc_aplicado;
+            }
+            else
+            {
+                total_descuento = 0;
+                int? total_desc = GlobalClass.productos.Sum(x => x.precio_desc);
+                if (total_desc != null)
+                {
+                    tb_descuento.Content = String.Format("{0:N0}", total_desc);
+                }
+            }
+
 
             int saldo_favor = 0;
             if (GlobalClass.saldo_devolucion != null)
@@ -857,6 +887,34 @@ namespace ErpClass
                 btn_factura.Visibility = Visibility.Hidden;
             }
 
+        }
+
+        private void btn_descuento_Click(object sender, RoutedEventArgs e)
+        {
+            if (btn_descuento.Content.ToString() == "DESCUENTO ACTIVADO")
+            {
+                btn_descuento.Content = "REALIZAR DESCUENTO";
+                ModalMensaje msj = new ModalMensaje("DESCUENTO DESACTIVADO", false, true);
+                msj.ShowDialog();
+
+            }
+            else
+            {
+                HabilitarProceso hb = new HabilitarProceso("Habilitar descuento", 1);
+                bool? hab = hb.ShowDialog();
+                if (hab == true)
+                {
+
+                    btn_descuento.Content = "DESCUENTO ACTIVADO";
+                    ModalMensaje msj = new ModalMensaje("DESCUENTO ACTIVADO", false, true);
+                    msj.ShowDialog();
+
+                    modal_descuento m = new modal_descuento();
+                    m.ShowDialog();
+                    descuento = m.porcetaje;
+                    calcularPago();
+                }
+            }
         }
     }
 }

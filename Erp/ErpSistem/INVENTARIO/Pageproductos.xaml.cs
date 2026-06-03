@@ -31,7 +31,6 @@ namespace ErpClass
         public Pageproductos()
         {
             InitializeComponent();
-            menu();
             fecha_actual.Content = DateTime.Now.Date.ToString("dd/MM/yyyy");
             tabla_tranfer_pro.ItemsSource = produc_transfer;
             cargarCentro();
@@ -85,14 +84,6 @@ namespace ErpClass
                 ca.nombre = item.nombre;
 
                 cbx_bodega.Items.Add(ca);
-            }
-        }
-        public void menu()
-        {
-            if (GlobalClass.user_rol==4 || GlobalClass.user_rol == 1)
-            {
-                mov_menu.Visibility = Visibility.Collapsed;
-                trans_menu.Visibility = Visibility.Collapsed;
             }
         }
         private void cargarComboProducto(int? codigo)

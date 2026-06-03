@@ -582,3 +582,5 @@ C:\Users\jd915\OneDrive\Documentos\Mjd\Repos\erp\Erp\ErpSistem\obj\Debug\ErpAdmi
 C:\Users\jd915\OneDrive\Documentos\Mjd\Repos\erp\Erp\ErpSistem\obj\Debug\View.csproj.Up2Date
 C:\Users\jd915\OneDrive\Documentos\Mjd\Repos\erp\Erp\ErpSistem\obj\Debug\ErpAdmin.exe
 C:\Users\jd915\OneDrive\Documentos\Mjd\Repos\erp\Erp\ErpSistem\obj\Debug\ErpAdmin.pdb
+C:\Users\jd915\OneDrive\Documentos\Mjd\Repos\erp\Erp\ErpSistem\obj\Debug\PEDIDO\modal_descuento.g.cs
+C:\Users\jd915\OneDrive\Documentos\Mjd\Repos\erp\Erp\ErpSistem\obj\Debug\PEDIDO\modal_descuento.baml

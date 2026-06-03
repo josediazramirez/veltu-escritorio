@@ -81,10 +81,11 @@ namespace ErpClass
                     bt_menu.Add(new MenuButton { idmenu = "inventario", nombre = "INVENTARIO" });
                     break;
                 case 5:
+                    bt_menu.Add(new MenuButton { idmenu = "rep_vent_dia", nombre = "Ventas del dia" });
                     bt_menu.Add(new MenuButton { idmenu = "inventario", nombre = "INVENTARIO" });
                     bt_menu.Add(new MenuButton { idmenu = "categoria", nombre = "PRO.CATEGORIA" });
                     bt_menu.Add(new MenuButton { idmenu = "bodega", nombre = "BODEGAS" });
-                   
+
                     break;
             }
             return bt_menu;

@@ -33,7 +33,7 @@ namespace ErpClass
         ObservableCollection<DetalleDTO> detalles = new ObservableCollection<DetalleDTO>();
         ObservableCollection<DetalleDTO> productos = new ObservableCollection<DetalleDTO>();
         int total;
-
+        int porcetaje_desc = 0;
         public Pagenotaventa()
         {
 
@@ -42,7 +42,7 @@ namespace ErpClass
             mantenerDatos();
             cargarPedido();
             carCbxFlete();
-            dgi_detalles.Columns[8].IsReadOnly = true;
+            dgi_detalles.Columns[9].IsReadOnly = true;
         }
 
         private void cargarPedido()
@@ -75,8 +75,8 @@ namespace ErpClass
         private void btn_mas_Click(object sender, RoutedEventArgs e)
         {
             DetalleDTO detalle = (DetalleDTO)dgi_detalles.SelectedItem;
-            if (detalle.Cantidad<detalle.cantidad_disp)
-            {       
+            if (detalle.Cantidad < detalle.cantidad_disp)
+            {
                 int desc = 0;
                 if (detalle.precio_desc != null)
                 {
@@ -210,7 +210,7 @@ namespace ErpClass
 
                         if (v > 0)
                         {
-                            int totalDes = 0;  
+                            int totalDes = 0;
                             foreach (DetalleDTO item in dgi_detalles.Items)
                             {
                                 Detalle_pedido deta = new Detalle_pedido();
@@ -219,7 +219,7 @@ namespace ErpClass
                                 deta.codigo = item.codigo;
                                 deta.tamanio = item.Tamanio;
                                 deta.precio_desc = item.Precio_desc;
-                                if (deta.precio_desc!=null)
+                                if (deta.precio_desc != null)
                                 {
                                     totalDes += item.Precio_desc.Value * item.Cantidad;
                                 }
@@ -322,7 +322,7 @@ namespace ErpClass
 
                 System.Drawing.Rectangle rectanguloQr =
                 new System.Drawing.Rectangle(
-                    20,50,
+                    20, 50,
                    150,
                    150);
 
@@ -334,7 +334,7 @@ namespace ErpClass
                     {
                         Height = 150,
                         Width = 150
-                        
+
                     }
                 };
                 e1.Graphics.DrawImage(barcodeWriter.Write(NroAtencion.ToString()), rectanguloQr);
@@ -532,7 +532,7 @@ namespace ErpClass
                     {
                         if (x.idmedida == 3)
                         {
-                            if (x.Cantidad <detalle.cantidad_disp)
+                            if (x.Cantidad < detalle.cantidad_disp)
                             {
                                 x.Cantidad++;
                                 x.total = x.Cantidad * x.precio;
@@ -572,7 +572,7 @@ namespace ErpClass
                 {
                     if (x.idmedida == 3)
                     {
-                        if (x.Cantidad<detalle.cantidad_disp)
+                        if (x.Cantidad < detalle.cantidad_disp)
                         {
                             x.Cantidad++;
                             x.total = x.Cantidad * x.precio;
@@ -673,24 +673,24 @@ namespace ErpClass
             if (btn_descuento.Content.ToString() == "DESCUENTO ACTIVADO")
             {
                 btn_descuento.Content = "REALIZAR DESCUENTO";
-                dgi_detalles.Columns[8].IsReadOnly = true;
+                dgi_detalles.Columns[9].IsReadOnly = true;
                 ModalMensaje msj = new ModalMensaje("DESCUENTO DESACTIVADO", false, true);
                 msj.ShowDialog();
             }
             else
             {
-                HabilitarProceso hb = new HabilitarProceso("Habilitar descuento",1);
+                HabilitarProceso hb = new HabilitarProceso("Habilitar descuento", 1);
                 bool? hab = hb.ShowDialog();
                 if (hab == true)
                 {
-                    dgi_detalles.Columns[8].IsReadOnly = false;
+                    dgi_detalles.Columns[9].IsReadOnly = false;
                     btn_descuento.Content = "DESCUENTO ACTIVADO";
                     ModalMensaje msj = new ModalMensaje("DESCUENTO ACTIVADO", false, true);
                     msj.ShowDialog();
                 }
                 else
                 {
-                    dgi_detalles.Columns[8].IsReadOnly = true;
+                    dgi_detalles.Columns[9].IsReadOnly = true;
                 }
             }
         }
@@ -788,7 +788,7 @@ namespace ErpClass
                             GlobalClass.obj_cliente = cli;
                         }
                     }
-                    if (error==0)
+                    if (error == 0)
                     {
                         Pedido pedido = new Pedido();
                         pedido.cli_nombre = GlobalClass.user_nombre;
@@ -859,7 +859,7 @@ namespace ErpClass
                             int lineas = (lines.Length * 20) + 600;
 
                             PrintDocument p = new PrintDocument();
-                            PaperSize paperSize = new PaperSize("Ticket",300,lineas);
+                            PaperSize paperSize = new PaperSize("Ticket", 300, lineas);
 
                             p.DefaultPageSettings.PaperSize = paperSize;
                             p.PrintPage += delegate (object sender1, PrintPageEventArgs e1)
@@ -871,7 +871,7 @@ namespace ErpClass
 
 
                                 graphics.DrawString("FERRETERIA SAN ALFONSO", drawFontTitulo, drawBrush, new RectangleF(0, 10, p.DefaultPageSettings.PrintableArea.Width, p.DefaultPageSettings.PrintableArea.Height));
-                                graphics.DrawString("COTIZACIÓN", drawFontTitulo, drawBrush, new RectangleF(0,50, p.DefaultPageSettings.PrintableArea.Width, p.DefaultPageSettings.PrintableArea.Height));
+                                graphics.DrawString("COTIZACIÓN", drawFontTitulo, drawBrush, new RectangleF(0, 50, p.DefaultPageSettings.PrintableArea.Width, p.DefaultPageSettings.PrintableArea.Height));
                                 graphics.DrawString(comanda, drawFontBold, drawBrush, new RectangleF(0, 70, p.DefaultPageSettings.PrintableArea.Width, p.DefaultPageSettings.PrintableArea.Height));
 
                             };
@@ -908,7 +908,7 @@ namespace ErpClass
             }
         }
 
-      
+
 
         private void txt_cant_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -959,5 +959,37 @@ namespace ErpClass
 
         }
 
+        private void btn_descuento_total_Click(object sender, RoutedEventArgs e)
+        {
+            if (btn_descuento.Content.ToString() == "DESCUENTO ACTIVADO")
+            {
+                btn_descuento.Content = "REALIZAR DESCUENTO";
+                dgi_detalles.Columns[9].IsReadOnly = true;
+                ModalMensaje msj = new ModalMensaje("DESCUENTO DESACTIVADO", false, true);
+                msj.ShowDialog();
+
+            }
+            else
+            {
+                HabilitarProceso hb = new HabilitarProceso("Habilitar descuento", 1);
+                bool? hab = hb.ShowDialog();
+                if (hab == true)
+                {
+
+                    btn_descuento.Content = "DESCUENTO ACTIVADO";
+                    ModalMensaje msj = new ModalMensaje("DESCUENTO ACTIVADO", false, true);
+                    msj.ShowDialog();
+
+                    modal_descuento m = new modal_descuento();
+                    m.ShowDialog();
+                    porcetaje_desc = m.porcetaje;
+                    calcularTotal();
+                }
+                else
+                {
+                    dgi_detalles.Columns[9].IsReadOnly = true;
+                }
+            }
+        }
     }
 }

@@ -15,7 +15,7 @@
     <WarningLevel>4</WarningLevel>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <TargetFrameworkProfile />
-    <PublishUrl>C:\ERP\</PublishUrl>
+    <PublishUrl>ec\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -27,7 +27,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <WebPage>publish.htm</WebPage>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>22</ApplicationRevision>
+    <ApplicationRevision>31</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -306,6 +306,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="PEDIDO\modal_descuento.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="PRODUCTO\ModuloCategoria.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -346,6 +350,9 @@
     </Compile>
     <Compile Include="INVENTARIO\ModuloBodega.xaml.cs">
       <DependentUpon>ModuloBodega.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PEDIDO\modal_descuento.xaml.cs">
+      <DependentUpon>modal_descuento.xaml</DependentUpon>
     </Compile>
     <Compile Include="PRODUCTO\ModuloCategoria.xaml.cs">
       <DependentUpon>ModuloCategoria.xaml</DependentUpon>

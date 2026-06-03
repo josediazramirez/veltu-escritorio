@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="ErpAdmin.exe" version="1.0.0.22" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="ErpAdmin.exe" version="1.0.0.31" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="logo.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>3PLhCmwHiFC6mhG+D2bSR50Zf78EYavsbFuLuZpSFcM=</dsig:DigestValue>
+        <dsig:DigestValue>z7/F9nZkaCcZyXYrhRRrHMrI+ujHR0Cp2lB6dG8XKts=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -98,7 +98,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>xXeYeUjAAqOGhsBkNRAGZMYj9QbNoX78D2QeE65puNU=</dsig:DigestValue>
+        <dsig:DigestValue>7oUwf72Wb5iAr8I6vAX1k6BMvNrMrfBKav/6MCEX1wU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -127,14 +127,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ErpAdmin.exe" size="5292032">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ErpAdmin.exe" size="5296640">
       <assemblyIdentity name="ErpAdmin" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>4F1qQSDSlBietBcQBnXoApqrCGPaxW2OiGHdmKkUtK8=</dsig:DigestValue>
+        <dsig:DigestValue>C2TCf1gg+4AMw7HY7LgrrKu+QHvMywhAwNO4t9CHn0s=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -420,7 +420,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Bay6mRY3upQfZ2lmsOfcxJxirR8CNJdn+QTMMMxZ1j8=</dsig:DigestValue>
+      <dsig:DigestValue>Nn1H5dv9ou+woBcBqpLt6OzJmBvY3DCjUbScyWmcjis=</dsig:DigestValue>
     </hash>
   </file>
   <file name="logo.ico" size="270398">
