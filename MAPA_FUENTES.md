@@ -75,6 +75,7 @@ Existen documentos de diagramas especializados para profundizar en cada área:
 - [Tab INVENTARIO](DIAGRAMA_TAB_INVENTARIO.md): Detalle funcional del módulo de inventario.
 - [Tab MOVIMIENTOS](DIAGRAMA_TAB_MOVIMIENTOS.md): Detalle funcional del historial de movimientos.
 - [Tab TRANSFERENCIA](DIAGRAMA_TAB_TRANSFERENCIA_BODEGA.md): Detalle funcional de movimientos entre bodegas.
+- [Modelo de Negocio Inventario](MODELO_NEGOCIO_INVENTARIO.md): Reglas de negocio y flujos de inventario.
 
 ## 6. Localización de Archivos Clave
 
