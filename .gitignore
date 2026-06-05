@@ -1,0 +1,11 @@
+# Root .gitignore for .NET
+[Bb]in/
+[Oo]bj/
+[Rr]elease/
+[Dd]ebug/
+.vs/
+.vscode/
+*.user
+*.userosscache
+*.sln.docstates
+.DS_Store
